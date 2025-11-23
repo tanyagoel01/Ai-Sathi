@@ -43,7 +43,9 @@ const Subjects = () => {
   const subjects = [
     {
       titleKey: "Maths",
-      descriptionKey: "Grade 5 NCERT - Numbers, Addition, Fractions",
+      descriptionKey: selectedClass === "1"
+        ? "Class 1 NCERT - Numbers, Addition, Fractions"
+        : "Grade 5 NCERT - Numbers, Addition, Fractions",
       icon: Calculator,
       color: "primary" as const,
       route: "/maths-chapters",
