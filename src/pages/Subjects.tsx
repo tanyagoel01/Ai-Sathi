@@ -46,7 +46,7 @@ const Subjects = () => {
       descriptionKey: selectedClass === "1"
         ? "Class 1 NCERT - Numbers, Addition, Fractions"
         : selectedClass === "6"
-          ? "Class 6 NCERT - Numbers, Addition, Fractions"
+          ? "Class 6 NCERT"
           : "Grade 5 NCERT - Numbers, Addition, Fractions",
       icon: Calculator,
       color: "primary" as const,
