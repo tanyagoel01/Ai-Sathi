@@ -15,6 +15,8 @@ export interface LessonCard {
   contentHindi?: string;
   contentKannada?: string;
   visual?: string; // Emoji or simple illustration
+  visualHindi?: string;
+  visualKannada?: string;
   question?: string;
   questionHindi?: string;
   questionKannada?: string;
@@ -319,6 +321,8 @@ export const mathsChapters: Chapter[] = [
             contentHindi: "तुम उल्टी गिनती कर सकते हो! बड़ी संख्या से शुरू करो और नीचे गिनो।",
             contentKannada: "ನೀವು ಹಿಂದಕ್ಕೆ ಎಣಿಸಬಹುದು! ದೊಡ್ಡ ಸಂಖ್ಯೆಯಿಂದ ಪ್ರಾರಂಭಿಸಿ ಕೆಳಗೆ ಎಣಿಸಿ.",
             visual: "For 10 - 3, start at 10 and count back: 9, 8, 7!",
+            visualHindi: "10 - 3 के लिए, 10 से शुरू करो और पीछे गिनो: 9, 8, 7!",
+            visualKannada: "10 - 3 ಗಾಗಿ, 10 ರಲ್ಲಿ ಪ್ರಾರಂಭಿಸಿ ಹಿಂದಕ್ಕೆ ಎಣಿಸಿ: 9, 8, 7!",
           },
           {
             id: "sub-4",
@@ -474,6 +478,8 @@ export const mathsChapters: Chapter[] = [
             contentHindi: "गुणा एक ही संख्या को कई बार जोड़ना है! यह जोड़ का शॉर्टकट है।",
             contentKannada: "ಗುಣಾಕಾರ ಎಂದರೆ ಒಂದೇ ಸಂಖ್ಯೆಯನ್ನು ಹಲವು ಬಾರಿ ಸೇರಿಸುವುದು! ಇದು ಸೇರ್ಪಡೆಗೆ ಸಂಕ್ಷಿಪ್ತ ಮಾರ್ಗ.",
             visual: "3 × 4 means '3 added 4 times'",
+            visualHindi: "3 × 4 का मतलब '3 को 4 बार जोड़ा गया'",
+            visualKannada: "3 × 4 ಎಂದರೆ '3 ಅನ್ನು 4 ಬಾರಿ ಸೇರಿಸಲಾಗಿದೆ'",
           },
           {
             id: "mult-2",
@@ -485,6 +491,8 @@ export const mathsChapters: Chapter[] = [
             contentHindi: "3 टोकरियाँ हैं और हर टोकरी में 4 सेब हैं। कुल कितने सेब हैं?",
             contentKannada: "3 ಬುಟ್ಟಿಗಳಿವೆ ಮತ್ತು ಪ್ರತಿ ಬುಟ್ಟಿಯಲ್ಲಿ 4 ಸೇಬುಗಳಿವೆ. ಒಟ್ಟು ಎಷ್ಟು ಸೇಬುಗಳು?",
             visual: "4 + 4 + 4 = 12 OR 3 × 4 = 12",
+            visualHindi: "4 + 4 + 4 = 12 या 3 × 4 = 12",
+            visualKannada: "4 + 4 + 4 = 12 ಅಥವಾ 3 × 4 = 12",
             explanation: "Instead of adding 4 three times, we multiply! 3 × 4 = 12 apples! 🍎",
             explanationHindi: "4 को तीन बार जोड़ने के बजाय, हम गुणा करते हैं! 3 × 4 = 12 सेब! 🍎",
             explanationKannada: "4 ಅನ್ನು ಮೂರು ಬಾರಿ ಸೇರಿಸುವ ಬದಲು, ನಾವು ಗುಣಿಸುತ್ತೇವೆ! 3 × 4 = 12 ಸೇಬುಗಳು! 🍎",
@@ -499,6 +507,8 @@ export const mathsChapters: Chapter[] = [
             contentHindi: "कोई भी संख्या 0 से गुणा करने पर हमेशा 0 होती है! और कोई भी संख्या 1 से गुणा करने पर वही रहती है!",
             contentKannada: "ಯಾವುದೇ ಸಂಖ್ಯೆಯನ್ನು 0 ರಿಂದ ಗುಣಿಸಿದರೆ ಯಾವಾಗಲೂ 0! ಮತ್ತು ಯಾವುದೇ ಸಂಖ್ಯೆಯನ್ನು 1 ರಿಂದ ಗುಣಿಸಿದರೆ ಅದೇ ಉಳಿಯುತ್ತದೆ!",
             visual: "5 × 0 = 0 and 5 × 1 = 5",
+            visualHindi: "5 × 0 = 0 और 5 × 1 = 5",
+            visualKannada: "5 × 0 = 0 ಮತ್ತು 5 × 1 = 5",
           },
           {
             id: "mult-4",
@@ -661,6 +671,8 @@ export const mathsChapters: Chapter[] = [
             contentHindi: "आकृतियाँ हर जगह हैं! एक सिक्का वृत्त है, एक खिड़की वर्ग है, पिज्जा का टुकड़ा त्रिभुज है!",
             contentKannada: "ಆಕಾರಗಳು ಎಲ್ಲೆಡೆ ಇವೆ! ನಾಣ್ಯವು ವೃತ್ತವಾಗಿದೆ, ಕಿಟಕಿ ಚೌಕವಾಗಿದೆ, ಪಿಜ್ಜಾ ತುಂಡು ತ್ರಿಕೋನವಾಗಿದೆ!",
             visual: "⭕ Circle | 🟦 Square | 🔺 Triangle",
+            visualHindi: "⭕ वृत्त | 🟦 वर्ग | 🔺 त्रिभुज",
+            visualKannada: "⭕ ವೃತ್ತ | 🟦 ಚೌಕ | 🔺 ತ್ರಿಕೋನ",
           },
           {
             id: "shape-2",
@@ -672,6 +684,8 @@ export const mathsChapters: Chapter[] = [
             contentHindi: "वृत्त गोल होता है और इसमें कोई कोना नहीं होता। जैसे पहिया, प्लेट या सूरज!",
             contentKannada: "ವೃತ್ತವು ದುಂಡಾಗಿರುತ್ತದೆ ಮತ್ತು ಯಾವುದೇ ಮೂಲೆಗಳಿಲ್ಲ. ಚಕ್ರ, ತಟ್ಟೆ ಅಥವಾ ಸೂರ್ಯನಂತೆ!",
             visual: "🌕 = Circle with 0 corners",
+            visualHindi: "🌕 = 0 कोनों वाला वृत्त",
+            visualKannada: "🌕 = 0 ಮೂಲೆಗಳು ಹೊಂದಿರುವ ವೃತ್ತ",
             explanation: "You can roll a circle because it has no flat sides!",
             explanationHindi: "आप वृत्त को लुढ़का सकते हैं क्योंकि इसमें कोई सपाट भुजा नहीं होती!",
             explanationKannada: "ನೀವು ವೃತ್ತವನ್ನು ಉರುಳಿಸಬಹುದು ಏಕೆಂದರೆ ಅದಕ್ಕೆ ಸಮತಟ್ಟಾದ ಬದಿಗಳಿಲ್ಲ!",
@@ -708,6 +722,8 @@ export const mathsChapters: Chapter[] = [
             contentHindi: "वर्ग में 4 बराबर भुजाएं और 4 कोने होते हैं! जैसे किताब, खिड़की या शतरंज का बोर्ड।",
             contentKannada: "ಚೌಕಕ್ಕೆ 4 ಸಮಾನ ಬದಿಗಳು ಮತ್ತು 4 ಮೂಲೆಗಳಿವೆ! ಪುಸ್ತಕ, ಕಿಟಕಿ ಅಥವಾ ಚದುರಂಗ ಫಲಕದಂತೆ.",
             visual: "🟦 = Square with 4 corners",
+            visualHindi: "🟦 = 4 कोनों वाला वर्ग",
+            visualKannada: "🟦 = 4 ಮೂಲೆಗಳು ಹೊಂದಿರುವ ಚೌಕ",
             explanation: "All sides of a square are the same length!",
             explanationHindi: "वर्ग की सभी भुजाएं एक ही लंबाई की होती हैं!",
             explanationKannada: "ಚೌಕದ ಎಲ್ಲಾ ಬದಿಗಳು ಒಂದೇ ಉದ್ದವಾಗಿರುತ್ತವೆ!",
@@ -744,6 +760,8 @@ export const mathsChapters: Chapter[] = [
             contentHindi: "त्रिभुज में 3 भुजाएं और 3 कोने होते हैं! जैसे समोसा, पहाड़ या पिरामिड।",
             contentKannada: "ತ್ರಿಕೋನಕ್ಕೆ 3 ಬದಿಗಳು ಮತ್ತು 3 ಮೂಲೆಗಳಿವೆ! ಸಮೋಸಾ, ಪರ್ವತ ಅಥವಾ ಪಿರಮಿಡ್‌ನಂತೆ.",
             visual: "🔺 = Triangle with 3 corners",
+            visualHindi: "🔺 = 3 कोनों वाला त्रिभुज",
+            visualKannada: "🔺 = 3 ಮೂಲೆಗಳು ಹೊಂದಿರುವ ತ್ರಿಕೋನ",
             explanation: "Tri means three - triangle has three sides!",
             explanationHindi: "त्रि का मतलब तीन - त्रिभुज में तीन भुजाएं होती हैं!",
             explanationKannada: "ತ್ರಿ ಎಂದರೆ ಮೂರು - ತ್ರಿಕೋನಕ್ಕೆ ಮೂರು ಬದಿಗಳಿವೆ!",
@@ -869,6 +887,8 @@ export const scienceChapters: Chapter[] = [
             contentHindi: "हमारे शरीर में कई अंग हैं जो हमें अलग-अलग काम करने में मदद करते हैं। हर अंग का एक विशेष काम होता है!",
             contentKannada: "ನಮ್ಮ ದೇಹವು ವಿವಿಧ ಕೆಲಸಗಳನ್ನು ಮಾಡಲು ಸಹಾಯ ಮಾಡುವ ಅನೇಕ ಭಾಗಗಳನ್ನು ಹೊಂದಿದೆ. ಪ್ರತಿ ಭಾಗವು ವಿಶೇಷ ಕೆಲಸವನ್ನು ಹೊಂದಿದೆ!",
             visual: "👁️ Eyes see | 👂 Ears hear | ✋ Hands hold",
+            visualHindi: "👁️ आँखें देखती हैं | 👂 कान सुनते हैं | ✋ हाथ पकड़ते हैं",
+            visualKannada: "👁️ ಕಣ್ಣುಗಳು ನೋಡುತ್ತವೆ | 👂 ಕಿವಿಗಳು ಕೇಳುತ್ತವೆ | ✋ ಕೈಗಳು ಹಿಡಿಯುತ್ತವೆ",
           },
           {
             id: "body-2",
@@ -916,6 +936,8 @@ export const scienceChapters: Chapter[] = [
             contentHindi: "हमारे हाथ हमें चीजें पकड़ने, लिखने, खाने और खेलने में मदद करते हैं! हर हाथ में 5 उंगलियाँ होती हैं।",
             contentKannada: "ನಮ್ಮ ಕೈಗಳು ವಸ್ತುಗಳನ್ನು ಹಿಡಿಯಲು, ಬರೆಯಲು, ತಿನ್ನಲು ಮತ್ತು ಆಡಲು ಸಹಾಯ ಮಾಡುತ್ತವೆ! ಪ್ರತಿ ಕೈಗೆ 5 ಬೆರಳುಗಳಿವೆ.",
             visual: "✋ = 5 fingers",
+            visualHindi: "✋ = 5 उंगलियाँ",
+            visualKannada: "✋ = 5 ಬೆರಳುಗಳು",
             explanation: "We have 2 hands with 10 fingers total!",
             explanationHindi: "हमारे 2 हाथ हैं जिनमें कुल 10 उंगलियाँ हैं!",
             explanationKannada: "ನಮಗೆ ಒಟ್ಟು 10 ಬೆರಳುಗಳೊಂದಿಗೆ 2 ಕೈಗಳಿವೆ!",
@@ -1074,6 +1096,8 @@ export const scienceChapters: Chapter[] = [
             contentHindi: "जब हम भोजन खाते हैं, तो यह हमारे शरीर में यात्रा करता है! हमारा पाचन तंत्र भोजन को तोड़कर हमें ऊर्जा देता है।",
             contentKannada: "ನಾವು ಆಹಾರವನ್ನು ತಿನ್ನುವಾಗ, ಅದು ನಮ್ಮ ದೇಹದ ಮೂಲಕ ಪ್ರಯಾಣಿಸುತ್ತದೆ! ನಮ್ಮ ಜೀರ್ಣಾಂಗ ವ್ಯವಸ್ಥೆಯು ಆಹಾರವನ್ನು ಒಡೆದು ನಮಗೆ ಶಕ್ತಿಯನ್ನು ನೀಡುತ್ತದೆ.",
             visual: "Mouth → Stomach → Intestines",
+            visualHindi: "मुंह → पेट → आंतें",
+            visualKannada: "ಬಾಯಿ → ಹೊಟ್ಟೆ → ಕರುಳುಗಳು",
           },
           {
             id: "digest-2",
@@ -1085,6 +1109,8 @@ export const scienceChapters: Chapter[] = [
             contentHindi: "जब आप रोटी या चावल खाते हैं, तो आपके दांत इसे छोटे टुकड़ों में चबाते हैं। इससे आपके पेट के लिए पचाना आसान हो जाता है!",
             contentKannada: "ನೀವು ರೊಟ್ಟಿ ಅಥವಾ ಅನ್ನವನ್ನು ತಿನ್ನುವಾಗ, ನಿಮ್ಮ ಹಲ್ಲುಗಳು ಅದನ್ನು ಸಣ್ಣ ತುಂಡುಗಳಾಗಿ ಅಗಿಯುತ್ತವೆ. ಇದು ನಿಮ್ಮ ಹೊಟ್ಟೆಗೆ ಜೀರ್ಣಿಸಲು ಸುಲಭವಾಗುತ್ತದೆ!",
             visual: "🦷 Teeth chew → Small pieces → Easy to digest",
+            visualHindi: "🦷 दांत चबाते हैं → छोटे टुकड़े → आसानी से पचता है",
+            visualKannada: "🦷 ಹಲ್ಲುಗಳು ಅಗಿಯುತ್ತವೆ → ಸಣ್ಣ ತುಂಡುಗಳು → ಸುಲಭವಾಗಿ ಜೀರ್ಣವಾಗುತ್ತದೆ",
             explanation: "Always chew your food well before swallowing!",
             explanationHindi: "निगलने से पहले हमेशा अपना भोजन अच्छी तरह से चबाएं!",
             explanationKannada: "ನುಂಗುವ ಮೊದಲು ಯಾವಾಗಲೂ ನಿಮ್ಮ ಆಹಾರವನ್ನು ಚೆನ್ನಾಗಿ ಅಗಿಯಿರಿ!",
@@ -1099,6 +1125,8 @@ export const scienceChapters: Chapter[] = [
             contentHindi: "धीरे-धीरे खाएं और अपने भोजन को कम से कम 20 बार चबाएं! इससे आपके पेट को भोजन पचाने में मदद मिलती है।",
             contentKannada: "ನಿಧಾನವಾಗಿ ತಿನ್ನಿರಿ ಮತ್ತು ನಿಮ್ಮ ಆಹಾರವನ್ನು ಕನಿಷ್ಠ 20 ಬಾರಿ ಅಗಿಯಿರಿ! ಇದು ನಿಮ್ಮ ಹೊಟ್ಟೆಗೆ ಆಹಾರವನ್ನು ಜೀರ್ಣಿಸಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ.",
             visual: "Chew 20 times = Happy tummy! 😊",
+            visualHindi: "20 बार चबाएं = खुश पेट! 😊",
+            visualKannada: "20 ಬಾರಿ ಅಗಿಯಿರಿ = ಸಂತೋಷದ ಹೊಟ್ಟೆ! 😊",
           },
           {
             id: "digest-4",
@@ -1239,6 +1267,8 @@ export const scienceChapters: Chapter[] = [
             contentHindi: "हर पौधे में अलग-अलग अंग होते हैं जो उसे बढ़ने और स्वस्थ रहने में मदद करते हैं। बिल्कुल हमारे शरीर के अंगों की तरह!",
             contentKannada: "ಪ್ರತಿ ಸಸ್ಯವು ವಿವಿಧ ಭಾಗಗಳನ್ನು ಹೊಂದಿದೆ ಅದು ಬೆಳೆಯಲು ಮತ್ತು ಆರೋಗ್ಯವಾಗಿರಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ. ನಮ್ಮ ದೇಹಕ್ಕೆ ಭಾಗಗಳಿರುವಂತೆ!",
             visual: "🌸 Flower | 🍃 Leaf | 🌿 Stem | 🌰 Roots",
+            visualHindi: "🌸 फूल | 🍃 पत्ता | 🌿 तना | 🌰 जड़ें",
+            visualKannada: "🌸 ಹೂವು | 🍃 ಎಲೆ | 🌿 ಕಾಂಡ | 🌰 ಬೇರುಗಳು",
           },
           {
             id: "plant-2",
@@ -1250,6 +1280,8 @@ export const scienceChapters: Chapter[] = [
             contentHindi: "जड़ें जमीन के नीचे उगती हैं! वे पौधे को मिट्टी में पकड़कर रखती हैं और जमीन से पानी पीती हैं।",
             contentKannada: "ಬೇರುಗಳು ನೆಲದ ಕೆಳಗೆ ಬೆಳೆಯುತ್ತವೆ! ಅವು ಸಸ್ಯವನ್ನು ಮಣ್ಣಿನಲ್ಲಿ ಹಿಡಿದಿಟ್ಟುಕೊಳ್ಳುತ್ತವೆ ಮತ್ತು ನೆಲದಿಂದ ನೀರನ್ನು ಕುಡಿಯುತ್ತವೆ.",
             visual: "🌱 Plant above ground\n🌰 Roots below ground",
+            visualHindi: "🌱 जमीन के ऊपर पौधा\n🌰 जमीन के नीचे जड़ें",
+            visualKannada: "🌱 ನೆಲದ ಮೇಲೆ ಸಸ್ಯ\n🌰 ನೆಲದ ಕೆಳಗೆ ಬೇರುಗಳು",
             explanation: "You can't see roots because they're hidden in the soil!",
             explanationHindi: "आप जड़ें नहीं देख सकते क्योंकि वे मिट्टी में छिपी होती हैं!",
             explanationKannada: "ನೀವು ಬೇರುಗಳನ್ನು ನೋಡಲು ಸಾಧ್ಯವಿಲ್ಲ ಏಕೆಂದರೆ ಅವು ಮಣ್ಣಿನಲ್ಲಿ ಅಡಗಿವೆ!",
@@ -1264,6 +1296,8 @@ export const scienceChapters: Chapter[] = [
             contentHindi: "पत्ते हरे होते हैं! वे सूरज की रोशनी का उपयोग करके पौधे के लिए भोजन बनाते हैं। इसे प्रकाश संश्लेषण कहते हैं।",
             contentKannada: "ಎಲೆಗಳು ಹಸಿರು! ಅವು ಸೂರ್ಯನ ಬೆಳಕನ್ನು ಬಳಸಿ ಸಸ್ಯಕ್ಕೆ ಆಹಾರವನ್ನು ತಯಾರಿಸುತ್ತವೆ. ಇದನ್ನು ದ್ಯುತಿಸಂಶ್ಲೇಷಣೆ ಎಂದು ಕರೆಯಲಾಗುತ್ತದೆ.",
             visual: "🍃 + ☀️ = 🍎 Food!",
+            visualHindi: "🍃 + ☀️ = 🍎 भोजन!",
+            visualKannada: "🍃 + ☀️ = 🍎 ಆಹಾರ!",
             explanation: "Leaves need sunlight to make food, just like we need a kitchen to cook!",
             explanationHindi: "पत्तों को भोजन बनाने के लिए सूरज की रोशनी चाहिए, बिल्कुल जैसे हमें खाना पकाने के लिए रसोई चाहिए!",
             explanationKannada: "ಎಲೆಗಳಿಗೆ ಆಹಾರವನ್ನು ತಯಾರಿಸಲು ಸೂರ್ಯನ ಬೆಳಕು ಬೇಕು, ನಮಗೆ ಅಡುಗೆ ಮಾಡಲು ಅಡುಗೆಮನೆ ಬೇಕಾದಂತೆ!",
@@ -1400,6 +1434,8 @@ export const scienceChapters: Chapter[] = [
             contentHindi: "हर बड़ा पेड़ एक छोटे से बीज के रूप में शुरू होता है! पानी, सूरज की रोशनी और मिट्टी के साथ, बीज पौधों में बढ़ते हैं।",
             contentKannada: "ಪ್ರತಿ ದೊಡ್ಡ ಮರವು ಒಂದು ಚಿಕ್ಕ ಬೀಜವಾಗಿ ಪ್ರಾರಂಭವಾಗುತ್ತದೆ! ನೀರು, ಸೂರ್ಯನ ಬೆಳಕು ಮತ್ತು ಮಣ್ಣಿನೊಂದಿಗೆ, ಬೀಜಗಳು ಸಸ್ಯಗಳಾಗಿ ಬೆಳೆಯುತ್ತವೆ.",
             visual: "🌰 Seed → 🌱 Sprout → 🌿 Plant → 🌳 Tree",
+            visualHindi: "🌰 बीज → 🌱 अंकुर → 🌿 पौधा → 🌳 पेड़",
+            visualKannada: "🌰 ಬೀಜ → 🌱 ಮೊಳಕೆ → 🌿 ಸಸ್ಯ → 🌳 ಮರ",
           },
           {
             id: "growth-2",
@@ -1411,6 +1447,8 @@ export const scienceChapters: Chapter[] = [
             contentHindi: "अगर आप मिट्टी में आम का बीज बोते हैं और उसे पानी देते हैं, तो कुछ दिनों बाद एक छोटी कोपल निकल आएगी!",
             contentKannada: "ನೀವು ಮಣ್ಣಿನಲ್ಲಿ ಮಾವಿನ ಬೀಜವನ್ನು ನೆಟ್ಟು ನೀರು ಕೊಟ್ಟರೆ, ಕೆಲವು ದಿನಗಳ ನಂತರ ಒಂದು ಸಣ್ಣ ಮೊಳಕೆ ಹೊರಬರುತ್ತದೆ!",
             visual: "Day 1: 🌰 in soil\nDay 7: 🌱 sprout!",
+            visualHindi: "दिन 1: 🌰 मिट्टी में\nदिन 7: 🌱 अंकुर!",
+            visualKannada: "ದಿನ 1: 🌰 ಮಣ್ಣಿನಲ್ಲಿ\nದಿನ 7: 🌱 ಮೊಳಕೆ!",
             explanation: "Be patient! Plants take time to grow, just like we take time to grow tall!",
             explanationHindi: "धैर्य रखें! पौधों को बढ़ने में समय लगता है, बिल्कुल जैसे हमें लंबे होने में समय लगता है!",
             explanationKannada: "ತಾಳ್ಮೆ ಇರಿ! ಸಸ್ಯಗಳು ಬೆಳೆಯಲು ಸಮಯ ತೆಗೆದುಕೊಳ್ಳುತ್ತವೆ, ನಾವು ಎತ್ತರವಾಗಲು ಸಮಯ ತೆಗೆದುಕೊಳ್ಳುವಂತೆ!",
@@ -1425,6 +1463,8 @@ export const scienceChapters: Chapter[] = [
             contentHindi: "पौधों को बढ़ने के लिए 3 चीजें चाहिए: पानी 💧, सूरज की रोशनी ☀️, और अच्छी मिट्टी 🌰। इनके बिना, पौधे नहीं बढ़ सकते!",
             contentKannada: "ಸಸ್ಯಗಳು ಬೆಳೆಯಲು 3 ವಿಷಯಗಳು ಬೇಕು: ನೀರು 💧, ಸೂರ್ಯನ ಬೆಳಕು ☀️, ಮತ್ತು ಉತ್ತಮ ಮಣ್ಣು 🌰. ಇವುಗಳಿಲ್ಲದೆ, ಸಸ್ಯಗಳು ಬೆಳೆಯಲು ಸಾಧ್ಯವಿಲ್ಲ!",
             visual: "💧 + ☀️ + 🌰 = 🌳 Happy Plant!",
+            visualHindi: "💧 + ☀️ + 🌰 = 🌳 खुश पौधा!",
+            visualKannada: "💧 + ☀️ + 🌰 = 🌳 ಸಂತೋಷದ ಸಸ್ಯ!",
           },
           {
             id: "growth-4",
@@ -1565,6 +1605,8 @@ export const scienceChapters: Chapter[] = [
             contentHindi: "जानवर हमारे चारों ओर रहते हैं! कुछ हमारे घरों में रहते हैं, कुछ जंगलों में, और कुछ पानी में।",
             contentKannada: "ಪ್ರಾಣಿಗಳು ನಮ್ಮ ಸುತ್ತಲೂ ವಾಸಿಸುತ್ತವೆ! ಕೆಲವು ನಮ್ಮ ಮನೆಗಳಲ್ಲಿ, ಕೆಲವು ಅರಣ್ಯಗಳಲ್ಲಿ, ಮತ್ತು ಕೆಲವು ನೀರಿನಲ್ಲಿ ವಾಸಿಸುತ್ತವೆ.",
             visual: "🏠 Domestic | 🌳 Wild | 🌊 Water",
+            visualHindi: "🏠 पालतू | 🌳 जंगली | 🌊 जल",
+            visualKannada: "🏠 ಸಾಕು | 🌳 ಕಾಡು | 🌊 ನೀರು",
           },
           {
             id: "animal-2",
@@ -1576,6 +1618,8 @@ export const scienceChapters: Chapter[] = [
             contentHindi: "पालतू जानवर हमारे साथ रहते हैं! जैसे गाय 🐄 जो हमें दूध देती है, कुत्ते 🐕 जो हमारे घरों की रक्षा करते हैं, और मुर्गियां 🐔 जो हमें अंडे देती हैं।",
             contentKannada: "ಸಾಕು ಪ್ರಾಣಿಗಳು ನಮ್ಮೊಂದಿಗೆ ವಾಸಿಸುತ್ತವೆ! ಹಸುಗಳು 🐄 ನಮಗೆ ಹಾಲು ಕೊಡುತ್ತವೆ, ನಾಯಿಗಳು 🐕 ನಮ್ಮ ಮನೆಗಳನ್ನು ರಕ್ಷಿಸುತ್ತವೆ, ಮತ್ತು ಕೋಳಿಗಳು 🐔 ನಮಗೆ ಮೊಟ್ಟೆಗಳನ್ನು ಕೊಡುತ್ತವೆ.",
             visual: "🐄 Cow → 🥛 Milk\n🐔 Chicken → 🥚 Eggs",
+            visualHindi: "🐄 गाय → 🥛 दूध\n🐔 मुर्गी → 🥚 अंडे",
+            visualKannada: "🐄 ಹಸು → 🥛 ಹಾಲು\n🐔 ಕೋಳಿ → 🥚 ಮೊಟ್ಟೆಗಳು",
             explanation: "We take care of domestic animals, and they help us too!",
             explanationHindi: "हम पालतू जानवरों की देखभाल करते हैं, और वे भी हमारी मदद करते हैं!",
             explanationKannada: "ನಾವು ಸಾಕು ಪ್ರಾಣಿಗಳನ್ನು ನೋಡಿಕೊಳ್ಳುತ್ತೇವೆ, ಮತ್ತು ಅವು ಸಹ ನಮಗೆ ಸಹಾಯ ಮಾಡುತ್ತವೆ!",
@@ -1590,6 +1634,8 @@ export const scienceChapters: Chapter[] = [
             contentHindi: "जंगली जानवर जंगलों में रहते हैं! जैसे बाघ 🐅, हाथी 🐘, और बंदर 🐵। वे मनुष्यों के साथ नहीं रहते।",
             contentKannada: "ಕಾಡು ಪ್ರಾಣಿಗಳು ಅರಣ್ಯಗಳಲ್ಲಿ ವಾಸಿಸುತ್ತವೆ! ಹುಲಿಗಳು 🐅, ಆನೆಗಳು 🐘, ಮತ್ತು ಕೋತಿಗಳು 🐵. ಅವು ಮಾನವರೊಂದಿಗೆ ವಾಸಿಸುವುದಿಲ್ಲ.",
             visual: "🌳🐅🐘🐵 Forest Animals",
+            visualHindi: "🌳🐅🐘🐵 जंगली जानवर",
+            visualKannada: "🌳🐅🐘🐵 ಅರಣ್ಯ ಪ್ರಾಣಿಗಳು",
             explanation: "Wild animals are not pets! They belong in nature.",
             explanationHindi: "जंगली जानवर पालतू नहीं होते! वे प्रकृति में रहते हैं।",
             explanationKannada: "ಕಾಡು ಪ್ರಾಣಿಗಳು ಸಾಕು ಪ್ರಾಣಿಗಳಲ್ಲ! ಅವು ಪ್ರಕೃತಿಗೆ ಸೇರಿದವು.",
@@ -1777,6 +1823,8 @@ export const scienceChapters: Chapter[] = [
             contentHindi: "भारत में साल भर अलग-अलग ऋतुएं होती हैं। मौसम बदलता है - कभी गर्म, कभी ठंडा, कभी बारिश!",
             contentKannada: "ಭಾರತದಲ್ಲಿ ವರ್ಷವಿಡೀ ವಿವಿಧ ಋತುಗಳಿವೆ. ಹವಾಮಾನ ಬದಲಾಗುತ್ತದೆ - ಕೆಲವೊಮ್ಮೆ ಬಿಸಿ, ಕೆಲವೊಮ್ಮೆ ತಂಪು, ಕೆಲವೊಮ್ಮೆ ಮಳೆ!",
             visual: "☀️ Summer | ❄️ Winter | 🌧️ Monsoon | 🌸 Spring",
+            visualHindi: "☀️ गर्मी | ❄️ सर्दी | 🌧️ मानसून | 🌸 बसंत",
+            visualKannada: "☀️ ಬೇಸಿಗೆ | ❄️ ಚಳಿಗಾಲ | 🌧️ ಮಾನ್ಸೂನ್ | 🌸 ವಸಂತ",
           },
           {
             id: "season-2",
@@ -1788,6 +1836,8 @@ export const scienceChapters: Chapter[] = [
             contentHindi: "गर्मी में बहुत गर्म होता है! सूरज ☀️ तेज़ चमकता है। हम हल्के कपड़े पहनते हैं और खूब पानी पीते हैं।",
             contentKannada: "ಬೇಸಿಗೆಯಲ್ಲಿ, ತುಂಬಾ ಬಿಸಿಯಾಗಿರುತ್ತದೆ! ಸೂರ್ಯ ☀️ ಪ್ರಕಾಶಮಾನವಾಗಿ ಹೊಳೆಯುತ್ತದೆ. ನಾವು ಹಗುರವಾದ ಬಟ್ಟೆಗಳನ್ನು ಧರಿಸುತ್ತೇವೆ ಮತ್ತು ಸಾಕಷ್ಟು ನೀರು ಕುಡಿಯುತ್ತೇವೆ.",
             visual: "☀️🌡️ Very Hot!",
+            visualHindi: "☀️🌡️ बहुत गर्म!",
+            visualKannada: "☀️🌡️ ತುಂಬಾ ಬಿಸಿ!",
             explanation: "Summer months: April, May, June. It can be 40°C or more!",
             explanationHindi: "गर्मी के महीने: अप्रैल, मई, जून। 40°C या उससे अधिक हो सकता है!",
             explanationKannada: "ಬೇಸಿಗೆಯ ತಿಂಗಳುಗಳು: ಏಪ್ರಿಲ್, ಮೇ, ಜೂನ್. ಇದು 40°C ಅಥವಾ ಹೆಚ್ಚು ಆಗಿರಬಹುದು!",
@@ -1802,6 +1852,8 @@ export const scienceChapters: Chapter[] = [
             contentHindi: "मानसून में बहुत बारिश होती है! 🌧️ किसान खुश होते हैं क्योंकि फसलों को पानी चाहिए। हम छाते ☂️ का उपयोग करते हैं!",
             contentKannada: "ಮಾನ್ಸೂನ್ ಋತುವಿನಲ್ಲಿ, ತುಂಬಾ ಮಳೆ ಬರುತ್ತದೆ! 🌧️ ರೈತರು ಸಂತೋಷಪಡುತ್ತಾರೆ ಏಕೆಂದರೆ ಬೆಳೆಗಳಿಗೆ ನೀರು ಬೇಕು. ನಾವು ಛತ್ರಿಗಳನ್ನು ಬಳಸುತ್ತೇವೆ ☂️!",
             visual: "🌧️☂️ Lots of Rain!",
+            visualHindi: "🌧️☂️ बहुत बारिश!",
+            visualKannada: "🌧️☂️ ತುಂಬಾ ಮಳೆ!",
             explanation: "Monsoon months: July, August, September. Plants and animals love the rain!",
             explanationHindi: "मानसून के महीने: जुलाई, अगस्त, सितंबर। पौधे और जानवर बारिश पसंद करते हैं!",
             explanationKannada: "ಮಾನ್ಸೂನ್ ತಿಂಗಳುಗಳು: ಜುಲೈ, ಆಗಸ್ಟ್, ಸೆಪ್ಟೆಂಬರ್. ಸಸ್ಯಗಳು ಮತ್ತು ಪ್ರಾಣಿಗಳು ಮಳೆಯನ್ನು ಪ್ರೀತಿಸುತ್ತವೆ!",

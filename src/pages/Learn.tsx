@@ -308,7 +308,7 @@ export default function Learn() {
           {/* Visual Aid */}
           {currentCard.visual && (
             <div className="p-6 bg-white/50 rounded-xl mb-6 text-center">
-              <VisualContent visual={currentCard.visual} />
+              <VisualContent visual={getLocalizedText(currentCard.visual, currentCard.visualHindi, currentCard.visualKannada, language)} />
             </div>
           )}
 
