@@ -49,7 +49,7 @@ const MathsChapters = () => {
                         {t("Maths Chapters")}
                     </h1>
                     <p className="text-muted-foreground max-w-md mx-auto">
-                        {t(selectedClass === "1" ? "Class 1 • NCERT" : "Class 5 • NCERT")}
+                        {t(selectedClass === "1" ? "Class 1 • NCERT" : selectedClass === "6" ? "Class 6 • NCERT" : "Class 5 • NCERT")}
                     </p>
                 </div>
             </div>
