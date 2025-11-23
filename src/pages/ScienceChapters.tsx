@@ -5,7 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { ArrowLeft, FlaskConical, Play, Clock, BookOpen } from "lucide-react";
 import LanguageSelector from "@/components/LanguageSelector";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { scienceChapters } from "@/data/lessonContent";
+import { scienceChapters, getLocalizedText } from "@/data/lessonContent";
 
 const ScienceChapters = () => {
     const navigate = useNavigate();
@@ -103,7 +103,7 @@ const ScienceChapters = () => {
                                                 {language === "hi" ? lesson.titleHindi : lesson.title}
                                             </h3>
                                             <p className="text-sm text-muted-foreground mb-3">
-                                                {lesson.description}
+                                                {getLocalizedText(lesson.description, lesson.descriptionHindi, lesson.descriptionKannada, language)}
                                             </p>
 
                                             {/* Lesson Metadata */}

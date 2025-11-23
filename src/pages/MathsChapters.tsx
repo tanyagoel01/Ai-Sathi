@@ -4,7 +4,7 @@ import { Card } from "@/components/ui/card";
 import { ArrowLeft, Calculator, PlayCircle, Lock } from "lucide-react";
 import LanguageSelector from "@/components/LanguageSelector";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { mathsChapters } from "@/data/lessonContent";
+import { mathsChapters, getLocalizedText } from "@/data/lessonContent";
 
 const MathsChapters = () => {
     const navigate = useNavigate();
@@ -78,7 +78,9 @@ const MathsChapters = () => {
                                             <h3 className="font-semibold text-lg">
                                                 {language === "hi" ? lesson.titleHindi : lesson.title}
                                             </h3>
-                                            <p className="text-sm text-gray-600">{lesson.description}</p>
+                                            <p className="text-sm text-gray-600">
+                                                {getLocalizedText(lesson.description, lesson.descriptionHindi, lesson.descriptionKannada, language)}
+                                            </p>
                                             <div className="flex items-center gap-3 mt-1">
                                                 <span className="text-xs px-2 py-1 bg-blue-100 text-blue-700 rounded-full">
                                                     {t(lesson.difficulty)}

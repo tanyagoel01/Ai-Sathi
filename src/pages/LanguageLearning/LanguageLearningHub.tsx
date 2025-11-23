@@ -23,10 +23,8 @@ export default function LanguageLearningHub() {
     const modules = [
         {
             id: 'hindi-alphabet',
-            title: 'Hindi Alphabet',
-            titleHindi: 'हिंदी वर्णमाला',
-            description: 'Learn to read Hindi step by step',
-            descriptionHindi: 'हिंदी पढ़ना सीखें कदम-दर-कदम',
+            titleKey: 'Hindi Alphabet',
+            descriptionKey: 'Learn to read Hindi step by step',
             icon: BookOpen,
             color: 'from-purple-500 to-pink-500',
             route: '/language-learning/alphabet-course',
@@ -34,10 +32,8 @@ export default function LanguageLearningHub() {
         },
         {
             id: 'hindi-course',
-            title: 'Hindi Course',
-            titleHindi: 'हिंदी कोर्स',
-            description: 'Learn Hindi from basics',
-            descriptionHindi: 'हिंदी बुनियादी से सीखें',
+            titleKey: 'Hindi Course',
+            descriptionKey: 'Learn Hindi from basics',
             icon: BookOpen,
             color: 'from-orange-500 to-red-500',
             route: '/language-learning/hindi-course',
@@ -45,10 +41,8 @@ export default function LanguageLearningHub() {
         },
         {
             id: 'english-course',
-            title: 'English Course',
-            titleHindi: 'अंग्रेज़ी कोर्स',
-            description: 'Learn English A-Z',
-            descriptionHindi: 'अंग्रेज़ी A-Z सीखें',
+            titleKey: 'English Course',
+            descriptionKey: 'Learn English A-Z',
             icon: BookOpen,
             color: 'from-blue-500 to-cyan-500',
             route: '/language-learning/english-course',
@@ -56,10 +50,8 @@ export default function LanguageLearningHub() {
         },
         {
             id: 'picture-dictionary',
-            title: 'Picture Dictionary',
-            titleHindi: 'चित्र शब्दकोश',
-            description: 'Visual word learning',
-            descriptionHindi: 'चित्रों से शब्द सीखें',
+            titleKey: 'Picture Dictionary',
+            descriptionKey: 'Visual word learning',
             icon: Library,
             color: 'from-green-500 to-emerald-500',
             route: '/language-learning/picture-dictionary',
@@ -67,10 +59,8 @@ export default function LanguageLearningHub() {
         },
         {
             id: 'story-mode',
-            title: 'Story Mode',
-            titleHindi: 'कहानी मोड',
-            description: 'Read interactive stories',
-            descriptionHindi: 'इंटरैक्टिव कहानियाँ पढ़ें',
+            titleKey: 'Story Mode',
+            descriptionKey: 'Read interactive stories',
             icon: MessageSquare,
             color: 'from-yellow-500 to-orange-500',
             route: '/language-learning/stories',
@@ -78,10 +68,8 @@ export default function LanguageLearningHub() {
         },
         {
             id: 'multi-student',
-            title: 'Student Profiles',
-            titleHindi: 'छात्र प्रोफ़ाइल',
-            description: 'Manage multiple students',
-            descriptionHindi: 'कई छात्रों को प्रबंधित करें',
+            titleKey: 'Student Profiles',
+            descriptionKey: 'Manage multiple students',
             icon: Users,
             color: 'from-indigo-500 to-purple-500',
             route: '/language-learning/profiles',
@@ -89,10 +77,8 @@ export default function LanguageLearningHub() {
         },
         {
             id: 'dashboard',
-            title: 'Progress Dashboard',
-            titleHindi: 'प्रगति डैशबोर्ड',
-            description: 'View learning progress',
-            descriptionHindi: 'सीखने की प्रगति देखें',
+            titleKey: 'Progress Dashboard',
+            descriptionKey: 'View learning progress',
             icon: BarChart3,
             color: 'from-pink-500 to-rose-500',
             route: '/language-learning/dashboard',
@@ -165,7 +151,7 @@ export default function LanguageLearningHub() {
 
             {/* Modules Grid */}
             <div className="px-6 pb-12 space-y-4">
-                <h2 className="text-lg font-semibold text-foreground">Choose a Module</h2>
+                <h2 className="text-lg font-semibold text-foreground">{t('Choose a Module')}</h2>
                 <div className="grid gap-4">
                     {modules.map((module) => (
                         <Card
@@ -184,13 +170,10 @@ export default function LanguageLearningHub() {
                                 </div>
                                 <div className="flex-1">
                                     <h3 className="text-lg font-bold text-foreground mb-1">
-                                        {module.title}
+                                        {t(module.titleKey)}
                                     </h3>
-                                    <p className="text-sm text-muted-foreground mb-1">
-                                        {module.titleHindi}
-                                    </p>
                                     <p className="text-sm text-muted-foreground">
-                                        {module.description}
+                                        {t(module.descriptionKey)}
                                     </p>
                                 </div>
                             </div>
