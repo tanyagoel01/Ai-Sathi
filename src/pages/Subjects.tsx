@@ -45,14 +45,18 @@ const Subjects = () => {
       titleKey: "Maths",
       descriptionKey: selectedClass === "1"
         ? "Class 1 NCERT - Numbers, Addition, Fractions"
-        : "Grade 5 NCERT - Numbers, Addition, Fractions",
+        : selectedClass === "6"
+          ? "Class 6 NCERT - Numbers, Addition, Fractions"
+          : "Grade 5 NCERT - Numbers, Addition, Fractions",
       icon: Calculator,
       color: "primary" as const,
       route: "/maths-chapters",
     },
     {
       titleKey: "Science",
-      descriptionKey: "Grade 5 NCERT - Body, Plants, Weather",
+      descriptionKey: selectedClass === "6"
+        ? "Class 6 NCERT - Body, Plants, Weather"
+        : "Grade 5 NCERT - Body, Plants, Weather",
       icon: Globe,
       color: "accent" as const,
       route: "/science-chapters",
