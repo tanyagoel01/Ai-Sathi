@@ -54,7 +54,7 @@ export const hindiVowels: HindiLetter[] = [
         sound: 'a as in "about"',
         type: 'vowel',
         examples: [
-            { word: 'अनार', wordRoman: 'anaar', meaning: 'Pomegranate', picture: '🍎' },
+            { word: 'अदरक', wordRoman: 'adrak', meaning: 'Ginger', picture: '🫚' },
             { word: 'अंगूर', wordRoman: 'angoor', meaning: 'Grapes', picture: '🍇' },
         ],
         audio: '/audio/hindi/vowels/a.mp3',
@@ -661,7 +661,7 @@ export const hindiAlphabetLessons: AlphabetLesson[] = [
                 instructionsHindi: 'अक्षर को उसकी तस्वीर से मिलाओ',
                 data: {
                     pairs: [
-                        { letter: 'v1', image: '🍎' },
+                        { letter: 'v1', image: '🫚' },
                         { letter: 'v2', image: '🥭' },
                         { letter: 'v3', image: '🌰' },
                     ],
