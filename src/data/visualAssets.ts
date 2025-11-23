@@ -213,6 +213,34 @@ export const chapterVisuals: Record<string, VisualAsset[]> = {
             description: 'Measuring with rulers and scales',
             type: 'lottie'
         }
+    ],
+
+    // Maths - Division
+    'division': [
+        {
+            keyword: 'Division',
+            assetId: 'division_visual',
+            description: 'Visual representation of division',
+            type: 'lottie'
+        },
+        {
+            keyword: 'division',
+            assetId: 'division_visual',
+            description: 'Division concept visualization',
+            type: 'lottie'
+        },
+        {
+            keyword: 'share',
+            assetId: 'pizza_division',
+            description: 'Sharing equally',
+            type: 'lottie'
+        },
+        {
+            keyword: 'equal',
+            assetId: 'pizza_division',
+            description: 'Equal groups',
+            type: 'lottie'
+        }
     ]
 };
 
