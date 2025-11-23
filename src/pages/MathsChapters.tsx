@@ -20,6 +20,8 @@ const MathsChapters = () => {
         });
     };
 
+    const selectedClass = localStorage.getItem("selectedClass");
+
     return (
         <div className="min-h-screen bg-gradient-to-b from-background via-background to-primary/5">
             {/* Top Navigation */}
@@ -47,7 +49,7 @@ const MathsChapters = () => {
                         {t("Maths Chapters")}
                     </h1>
                     <p className="text-muted-foreground max-w-md mx-auto">
-                        {t("Class 5 • NCERT")}
+                        {t(selectedClass === "1" ? "Class 1 • NCERT" : "Class 5 • NCERT")}
                     </p>
                 </div>
             </div>
