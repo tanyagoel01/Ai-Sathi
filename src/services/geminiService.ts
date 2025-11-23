@@ -408,7 +408,7 @@ Instructions:
 - For science: relate to everyday observations
 - Be encouraging and patient
 - Keep answers concise (2-3 paragraphs max)
-- Use emojis sparingly for engagement
+- Do not use any emojis in your response
 
 Answer:`;
 
@@ -419,8 +419,8 @@ Answer:`;
     console.error("Tutoring response failed:", error);
     // Fallback response
     return context.language === "hindi"
-      ? "माफ़ करें, मैं अभी जवाब नहीं दे सकता। कृपया दोबारा कोशिश करें। 🙏"
-      : "Sorry, I cannot answer right now. Please try again. 🙏";
+      ? "माफ़ करें, मैं अभी जवाब नहीं दे सकता। कृपया दोबारा कोशिश करें।"
+      : "Sorry, I cannot answer right now. Please try again.";
   }
 }
 
