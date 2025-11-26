@@ -1,0 +1,21 @@
+{
+  "name": "math-tutor",
+  "version": "1.0.0",
+  "description": "Semantic search and embeddings for AI math tutoring with RAG",
+  "type": "module",
+  "scripts": {
+    "generate-embeddings": "node scripts/generateEmbeddings.js",
+    "test": "node scripts/testSystem.js --skip-llm",
+    "test:quick": "node scripts/testSystem.js --skip-llm",
+    "test:full": "node scripts/testSystem.js",
+    "example": "node examples/ragExamples.js"
+  },
+  "keywords": [
+    "math",
+    "education",
+    "embeddings",
+    "semantic-search",
+    "rag",
+    "ai-tutor"
+  ]
+}

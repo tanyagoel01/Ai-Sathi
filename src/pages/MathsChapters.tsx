@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { ArrowLeft, Calculator, PlayCircle, Lock } from "lucide-react";
+import { ArrowLeft, Calculator, PlayCircle, Lock, MessageCircle, Trophy } from "lucide-react";
 import LanguageSelector from "@/components/LanguageSelector";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { mathsChapters, getLocalizedText } from "@/data/lessonContent";
@@ -49,6 +49,48 @@ const MathsChapters = () => {
                     <p className="text-muted-foreground max-w-md mx-auto">
                         {t("Class 5 • NCERT")}
                     </p>
+                </div>
+            </div>
+
+            {/* AI Learning Modes */}
+            <div className="px-6 pb-4">
+                <h2 className="text-xl font-bold mb-3">
+                    {t("AI Learning Modes")}
+                </h2>
+                <div className="grid grid-cols-2 gap-3">
+                    <Card
+                        className="p-4 cursor-pointer hover:shadow-lg transition-all border-2 border-blue-500/20 bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-800/20"
+                        onClick={() => navigate("/math-chat")}
+                    >
+                        <div className="text-center space-y-2">
+                            <div className="w-12 h-12 mx-auto rounded-full bg-blue-500 flex items-center justify-center">
+                                <MessageCircle className="w-6 h-6 text-white" />
+                            </div>
+                            <h3 className="font-semibold">
+                                {t("Ask AI Tutor")}
+                            </h3>
+                            <p className="text-xs text-muted-foreground">
+                                {t("Get instant help")}
+                            </p>
+                        </div>
+                    </Card>
+
+                    <Card
+                        className="p-4 cursor-pointer hover:shadow-lg transition-all border-2 border-green-500/20 bg-gradient-to-br from-green-50 to-green-100 dark:from-green-900/20 dark:to-green-800/20"
+                        onClick={() => navigate("/practice-mode")}
+                    >
+                        <div className="text-center space-y-2">
+                            <div className="w-12 h-12 mx-auto rounded-full bg-green-500 flex items-center justify-center">
+                                <Trophy className="w-6 h-6 text-white" />
+                            </div>
+                            <h3 className="font-semibold">
+                                {t("Practice Mode")}
+                            </h3>
+                            <p className="text-xs text-muted-foreground">
+                                {t("Test your skills")}
+                            </p>
+                        </div>
+                    </Card>
                 </div>
             </div>
 

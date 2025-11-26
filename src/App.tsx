@@ -12,6 +12,8 @@ import LessonComplete from "./pages/LessonComplete";
 import ClassSelection from "./pages/ClassSelection";
 import Subjects from "./pages/Subjects";
 import Chat from "./pages/Chat";
+import MathChat from "./pages/MathChat";
+import PracticeMode from "./pages/PracticeMode";
 import ScienceChapters from "./pages/ScienceChapters";
 import MathsChapters from "./pages/MathsChapters";
 import NotFound from "./pages/NotFound";
@@ -77,6 +79,10 @@ const App = () => (
             <Route path="/chat" element={<Chat />} />
             <Route path="/science-chapters" element={<ScienceChapters />} />
             <Route path="/maths-chapters" element={<MathsChapters />} />
+            
+            {/* Math AI Tutor Routes */}
+            <Route path="/math-chat" element={<MathChat />} />
+            <Route path="/practice-mode" element={<PracticeMode />} />
 
             {/* Language Learning Module Routes */}
             <Route path="/language-learning" element={<LanguageLearningHub />} />
