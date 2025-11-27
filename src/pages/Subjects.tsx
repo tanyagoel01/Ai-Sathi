@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
 import LanguageSelector from "@/components/LanguageSelector";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 const Subjects = () => {
   const navigate = useNavigate();
@@ -82,7 +83,10 @@ const Subjects = () => {
           <ArrowLeft className="w-4 h-4 mr-2" />
           Back
         </Button>
-        <LanguageSelector />
+        <div className="flex items-center gap-2">
+          <ThemeToggle />
+          <LanguageSelector />
+        </div>
       </div>
 
       {/* Hero Section */}

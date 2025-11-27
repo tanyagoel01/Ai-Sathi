@@ -9,6 +9,7 @@ import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { ArrowLeft, BookOpen, Library, MessageSquare, Users, BarChart3 } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
+import { ThemeToggle } from '@/components/ThemeToggle';
 
 export default function LanguageLearningHub() {
     const navigate = useNavigate();
@@ -115,8 +116,10 @@ export default function LanguageLearningHub() {
                     <ArrowLeft className="w-4 h-4 mr-2" />
                     Back
                 </Button>
-                {!demoMode && (
-                    <Button
+                <div className="flex items-center gap-2">
+                    <ThemeToggle />
+                    {!demoMode && (
+                        <Button
                         variant="outline"
                         size="sm"
                         onClick={enableDemoMode}
@@ -124,7 +127,8 @@ export default function LanguageLearningHub() {
                     >
                         🎬 Demo Mode
                     </Button>
-                )}
+                    )}
+                </div>
             </div>
 
             {/* Hero Section */}

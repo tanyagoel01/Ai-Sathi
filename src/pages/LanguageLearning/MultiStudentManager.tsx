@@ -9,6 +9,7 @@ import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { ArrowLeft, UserPlus, User, Trash2 } from 'lucide-react';
+import { ThemeToggle } from '@/components/ThemeToggle';
 
 interface StudentProfile {
     id: string;
@@ -64,7 +65,7 @@ export default function MultiStudentManager() {
     };
 
     return (
-        <div className="min-h-screen bg-gradient-to-b from-indigo-50 to-white pb-12">
+        <div className="min-h-screen bg-gradient-to-b from-indigo-50 to-white dark:from-black dark:to-black pb-12">
             {/* Header */}
             <div className="px-4 pt-4 flex items-center justify-between">
                 <Button
@@ -76,6 +77,7 @@ export default function MultiStudentManager() {
                     <ArrowLeft className="w-4 h-4 mr-2" />
                     Back
                 </Button>
+                <ThemeToggle />
                 <Button
                     size="sm"
                     onClick={() => setShowAddForm(!showAddForm)}

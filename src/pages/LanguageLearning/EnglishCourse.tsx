@@ -9,6 +9,7 @@ import { Card } from '@/components/ui/card';
 import { Progress } from '@/components/ui/progress';
 import { ArrowLeft, Lock, CheckCircle2, Play } from 'lucide-react';
 import { englishLessonsNew, type EnglishLesson } from '@/data/languageLearning/englishAlphabet';
+import { ThemeToggle } from '@/components/ThemeToggle';
 
 export default function EnglishCourse() {
     const navigate = useNavigate();
@@ -44,7 +45,7 @@ export default function EnglishCourse() {
     };
 
     return (
-        <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+        <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white dark:from-black dark:to-black">
             {/* Header */}
             <div className="px-4 pt-4 flex items-center justify-between">
                 <Button
@@ -56,6 +57,7 @@ export default function EnglishCourse() {
                     <ArrowLeft className="w-4 h-4 mr-2" />
                     Back
                 </Button>
+                <ThemeToggle />
             </div>
 
             {/* Hero */}

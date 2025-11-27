@@ -9,6 +9,7 @@ import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { BookOpen, Lock, ArrowLeft } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 interface ClassOption {
     id: number;
@@ -91,11 +92,16 @@ const ClassSelection = () => {
     };
 
     return (
-        <div className="min-h-screen bg-gradient-to-b from-blue-50 via-purple-50 to-pink-50 relative">
+        <div className="min-h-screen bg-gradient-to-b from-blue-50 via-purple-50 to-pink-50 dark:from-black dark:via-black dark:to-black relative">
+            {/* Theme Toggle */}
+            <div className="absolute top-4 right-4 md:top-8 md:right-8 z-50">
+                <ThemeToggle />
+            </div>
+            
             {/* Back Button */}
             <button
                 onClick={() => navigate("/language-onboarding")}
-                className="absolute top-4 left-4 md:top-8 md:left-8 p-3 bg-white/80 backdrop-blur-sm rounded-full shadow-lg hover:bg-white transition-all hover:scale-110 z-10 group"
+                className="absolute top-4 left-4 md:top-8 md:left-8 p-3 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-full shadow-lg hover:bg-white dark:hover:bg-gray-700 transition-all hover:scale-110 z-10 group"
                 aria-label="Go back"
             >
                 <ArrowLeft className="w-6 h-6 text-gray-600 group-hover:text-blue-600 transition-colors" />
@@ -116,7 +122,7 @@ const ClassSelection = () => {
                     <h1 className="text-4xl font-bold mb-3 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                         {getText("title")}
                     </h1>
-                    <p className="text-lg text-gray-600">
+                    <p className="text-lg text-gray-600 dark:text-gray-300">
                         {getText("subtitle")}
                     </p>
                 </div>
@@ -124,17 +130,17 @@ const ClassSelection = () => {
                 {/* Language Learning Button */}
                 <div className="max-w-2xl mx-auto mb-8">
                     <Card
-                        className="p-6 cursor-pointer hover:shadow-lg hover:scale-[1.02] transition-all border-2 border-orange-200 bg-gradient-to-r from-orange-50 to-amber-50 flex items-center gap-6"
+                        className="p-6 cursor-pointer hover:shadow-lg hover:scale-[1.02] transition-all border-2 border-orange-200 dark:border-orange-800 bg-gradient-to-r from-orange-50 to-amber-50 dark:from-gray-900 dark:to-gray-800 flex items-center gap-6"
                         onClick={() => navigate("/language-learning")}
                     >
                         <div className="h-16 w-16 rounded-full bg-orange-100 flex items-center justify-center flex-shrink-0">
                             <BookOpen className="w-8 h-8 text-orange-600" />
                         </div>
                         <div>
-                            <h3 className="text-xl font-bold text-orange-900 mb-1">
+                            <h3 className="text-xl font-bold text-orange-900 dark:text-orange-300 mb-1">
                                 {getText("languageCourse")}
                             </h3>
-                            <p className="text-orange-700/80">
+                            <p className="text-orange-700/80 dark:text-orange-400/80">
                                 {getText("languageDesc")}
                             </p>
                         </div>
@@ -152,8 +158,8 @@ const ClassSelection = () => {
                         <Card
                             key={classOption.id}
                             className={`relative p-6 transition-all cursor-pointer ${classOption.enabled
-                                ? "hover:shadow-lg hover:scale-105 border-2 border-blue-200 bg-white"
-                                : "opacity-50 cursor-not-allowed bg-gray-50 border border-gray-200"
+                                ? "hover:shadow-lg hover:scale-105 border-2 border-blue-200 dark:border-blue-800 bg-white dark:bg-gray-900"
+                                : "opacity-50 cursor-not-allowed bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-700"
                                 }`}
                             onClick={() => handleClassSelect(classOption.id, classOption.enabled)}
                         >
@@ -207,7 +213,7 @@ const ClassSelection = () => {
 
                 {/* Info Text */}
                 <div className="text-center mt-12">
-                    <p className="text-sm text-gray-500">
+                    <p className="text-sm text-gray-500 dark:text-gray-400">
                         📚 {getText("info")}
                     </p>
                 </div>

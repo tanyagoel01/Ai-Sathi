@@ -8,6 +8,7 @@ import { useNavigate, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Trophy, Star, ArrowRight, RotateCcw } from "lucide-react";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 export default function LessonComplete() {
   const navigate = useNavigate();
@@ -28,7 +29,12 @@ export default function LessonComplete() {
   const message = getMessage();
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-yellow-50 to-white flex items-center justify-center p-4">
+    <div className="min-h-screen bg-gradient-to-b from-yellow-50 to-white dark:from-black dark:to-black flex items-center justify-center p-4 relative">
+      {/* Theme Toggle */}
+      <div className="absolute top-4 right-4 z-50">
+        <ThemeToggle />
+      </div>
+      
       <Card className="max-w-md w-full p-8 shadow-lg">
         {/* Trophy Icon */}
         <div className="text-center mb-6">

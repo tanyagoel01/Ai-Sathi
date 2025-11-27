@@ -9,6 +9,7 @@ import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Progress } from '@/components/ui/progress';
 import { ArrowLeft, Volume2, CheckCircle2, XCircle, Trophy } from 'lucide-react';
+import { ThemeToggle } from '@/components/ThemeToggle';
 import {
     getEnglishLessonById,
     getEnglishLetterById,
@@ -148,7 +149,7 @@ export default function EnglishLessonView() {
     };
 
     return (
-        <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white pb-12">
+        <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white dark:from-black dark:to-black pb-12">
             {/* Header */}
             <div className="px-4 pt-4 flex items-center justify-between">
                 <Button
@@ -160,6 +161,7 @@ export default function EnglishLessonView() {
                     <ArrowLeft className="w-4 h-4 mr-2" />
                     Back
                 </Button>
+                <ThemeToggle />
             </div>
 
             {/* Progress Bar */}
@@ -178,7 +180,7 @@ export default function EnglishLessonView() {
             {/* Lesson Title */}
             <div className="px-6 pt-6 pb-4 text-center">
                 <h1 className="text-2xl font-bold text-foreground mb-1">{lesson.title}</h1>
-                <p className="text-lg text-blue-600">{lesson.titleHindi}</p>
+                <p className="text-lg text-blue-600 dark:text-blue-400">{lesson.titleHindi}</p>
             </div>
 
             {/* Exercise Content */}
@@ -206,10 +208,10 @@ function IntroductionExercise({
 
     return (
         <div className="space-y-6">
-            <Card className="p-6 bg-blue-50 border-blue-200">
+            <Card className="p-6 bg-blue-50 dark:bg-gray-800 border-blue-200 dark:border-gray-700">
                 <h2 className="text-xl font-bold text-foreground mb-2">{exercise.title}</h2>
                 <p className="text-sm text-muted-foreground mb-1">{exercise.instructions}</p>
-                <p className="text-sm text-blue-600">{exercise.instructionsHindi}</p>
+                <p className="text-sm text-blue-600 dark:text-blue-400">{exercise.instructionsHindi}</p>
             </Card>
 
             <div className="grid gap-4">
@@ -221,7 +223,7 @@ function IntroductionExercise({
                             </div>
                             <div className="flex-1">
                                 <h3 className="text-3xl font-bold text-foreground mb-1">{letter.letter}</h3>
-                                <p className="text-lg text-blue-600 mb-1">{letter.pronunciation}</p>
+                                <p className="text-lg text-blue-600 dark:text-blue-400 mb-1">{letter.pronunciation}</p>
                             </div>
                             <Button
                                 size="lg"
@@ -237,7 +239,7 @@ function IntroductionExercise({
                         <div className="space-y-2">
                             <p className="text-sm font-semibold text-foreground">Examples:</p>
                             {letter.examples.map((example, idx) => (
-                                <div key={idx} className="flex items-center gap-3 p-3 bg-blue-50 rounded-lg justify-between">
+                                <div key={idx} className="flex items-center gap-3 p-3 bg-blue-50 dark:bg-gray-800 rounded-lg justify-between">
                                     <div className="flex items-center gap-3">
                                         <span className="text-2xl">{example.image}</span>
                                         <div>
@@ -290,35 +292,42 @@ function ListenRepeatExercise({
     const letters = exercise.data.letters.map((id: string) => getEnglishLetterById(id)).filter(Boolean) as EnglishLetter[];
 
     return (
-        <div className="space-y-6">
-            <Card className="p-6 bg-green-50 border-green-200">
-                <h2 className="text-xl font-bold text-foreground mb-2">{exercise.title}</h2>
-                <p className="text-sm text-muted-foreground mb-1">{exercise.instructions}</p>
-                <p className="text-sm text-blue-600">{exercise.instructionsHindi}</p>
+        <div className="space-y-6 px-4 pb-6">
+            {/* Improved Instructional Box */}
+            <Card className="p-6 bg-gradient-to-br from-blue-50 to-cyan-50 border-blue-100 rounded-2xl shadow-sm">
+                <h2 className="text-2xl font-bold text-foreground mb-4">{exercise.title}</h2>
+                <p className="text-base text-muted-foreground mb-3 leading-relaxed">{exercise.instructions}</p>
+                <p className="text-base text-blue-700 dark:text-blue-400 font-medium">{exercise.instructionsHindi}</p>
             </Card>
 
-            <div className="grid grid-cols-2 gap-4">
+            {/* Improved Letter Cards Grid */}
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-5">
                 {letters.map((letter) => (
                     <Card
                         key={letter.id}
-                        className="p-6 cursor-pointer hover:shadow-lg transition-all"
+                        className="relative cursor-pointer transition-all duration-300 hover:scale-105 active:scale-95 rounded-2xl shadow-md hover:shadow-xl border border-blue-100 bg-white overflow-hidden group"
                         onClick={() => playSound(letter.id)}
                     >
-                        <div className="text-center space-y-3">
-                            <div className="w-full aspect-square rounded-2xl bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center">
-                                <span className="text-5xl text-white font-bold">{letter.letter}</span>
+                        {/* Audio Icon - Top Right */}
+                        <div className="absolute top-2 right-2 z-10 bg-white/90 rounded-full p-1.5 shadow-sm group-hover:bg-blue-100 transition-colors">
+                            <Volume2 className="w-4 h-4 text-blue-600 dark:text-blue-400" />
+                        </div>
+
+                        {/* Letter Card Content */}
+                        <div className="w-full h-[140px] md:h-[160px] flex flex-col items-center justify-center p-4">
+                            {/* Letter Display with Soft Pastel Background */}
+                            <div className="w-full h-full max-w-[140px] max-h-[140px] rounded-xl bg-gradient-to-br from-blue-100 to-cyan-100 flex items-center justify-center shadow-inner mb-2">
+                                <span className="text-6xl md:text-7xl text-blue-800 dark:text-blue-300 font-black leading-none">{letter.letter}</span>
                             </div>
-                            <p className="text-lg font-bold text-blue-600">{letter.pronunciation}</p>
-                            <Button size="sm" variant="outline" className="w-full rounded-full">
-                                <Volume2 className="w-4 h-4 mr-2" />
-                                Listen
-                            </Button>
+                            
+                            {/* Pronunciation */}
+                            <p className="text-sm md:text-base font-semibold text-blue-700 dark:text-blue-400 mt-2">{letter.pronunciation}</p>
                         </div>
                     </Card>
                 ))}
             </div>
 
-            <Button onClick={onNext} size="lg" className="w-full rounded-2xl h-14 bg-gradient-to-r from-blue-500 to-cyan-500">
+            <Button onClick={onNext} size="lg" className="w-full rounded-2xl h-14 bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 shadow-lg">
                 I've Practiced! →
             </Button>
         </div>
@@ -374,10 +383,10 @@ function MatchExercise({
 
     return (
         <div className="space-y-6">
-            <Card className="p-6 bg-yellow-50 border-yellow-200">
+            <Card className="p-6 bg-yellow-50 dark:bg-gray-800 border-yellow-200 dark:border-gray-700">
                 <h2 className="text-xl font-bold text-foreground mb-2">{exercise.title}</h2>
                 <p className="text-sm text-muted-foreground mb-1">{exercise.instructions}</p>
-                <p className="text-sm text-blue-600">{exercise.instructionsHindi}</p>
+                <p className="text-sm text-blue-600 dark:text-blue-400">{exercise.instructionsHindi}</p>
             </Card>
 
             {/* Letter to match */}
@@ -387,7 +396,7 @@ function MatchExercise({
                     <div className="w-32 h-32 mx-auto rounded-3xl bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center">
                         <span className="text-6xl text-white font-bold">{letter.letter}</span>
                     </div>
-                    <p className="text-2xl font-bold text-blue-600">{letter.pronunciation}</p>
+                    <p className="text-2xl font-bold text-blue-600 dark:text-blue-400">{letter.pronunciation}</p>
                 </div>
             </Card>
 
@@ -480,7 +489,7 @@ function QuizExercise({
             <Card className="p-6 bg-orange-50 border-orange-200">
                 <h2 className="text-xl font-bold text-foreground mb-2">{exercise.title}</h2>
                 <p className="text-sm text-muted-foreground mb-1">{exercise.instructions}</p>
-                <p className="text-sm text-blue-600">{exercise.instructionsHindi}</p>
+                <p className="text-sm text-blue-600 dark:text-blue-400">{exercise.instructionsHindi}</p>
             </Card>
 
             {/* Play sound */}
@@ -518,7 +527,7 @@ function QuizExercise({
                         >
                             <div className="text-center">
                                 <div className="text-5xl font-bold mb-2">{letter.letter}</div>
-                                <p className="text-sm text-blue-600">{letter.pronunciation}</p>
+                                <p className="text-sm text-blue-600 dark:text-blue-400">{letter.pronunciation}</p>
                                 {selectedAnswer === letterId && showFeedback && (
                                     <div className="mt-2">
                                         {isCorrect ? (

@@ -10,6 +10,7 @@ import { Card } from '@/components/ui/card';
 import { ArrowLeft, Volume2, BookOpen } from 'lucide-react';
 import { stories, type Story } from '@/data/languageLearning/stories';
 import { useAudioPlayer } from '@/hooks/useAudioPlayer';
+import { ThemeToggle } from '@/components/ThemeToggle';
 
 export default function StoryMode() {
     const navigate = useNavigate();
@@ -45,7 +46,7 @@ export default function StoryMode() {
             : selectedStory.text;
 
         return (
-            <div className="min-h-screen bg-gradient-to-b from-yellow-50 to-white pb-12">
+            <div className="min-h-screen bg-gradient-to-b from-yellow-50 to-white dark:from-black dark:to-black pb-12">
                 {/* Header */}
                 <div className="px-4 pt-4 flex items-center justify-between">
                     <Button
@@ -168,19 +169,20 @@ export default function StoryMode() {
     }
 
     return (
-        <div className="min-h-screen bg-gradient-to-b from-yellow-50 to-white pb-12">
+        <div className="min-h-screen bg-gradient-to-b from-yellow-50 to-white dark:from-black dark:to-black pb-12">
             {/* Header */}
-            <div className="px-4 pt-4">
+            <div className="px-4 pt-4 flex items-center justify-between">
                 <Button
                     variant="ghost"
                     size="sm"
                     onClick={() => navigate(-1)}
                     className="rounded-full"
                 >
-                    <ArrowLeft className="w-4 h-4 mr-2" />
-                    Back
-                </Button>
-            </div>
+                        <ArrowLeft className="w-4 h-4 mr-2" />
+                        Back
+                    </Button>
+                    <ThemeToggle />
+                </div>
 
             {/* Hero */}
             <div className="px-6 pt-8 pb-6 text-center space-y-4">

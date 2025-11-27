@@ -11,6 +11,7 @@ import { ArrowLeft, Volume2, CheckCircle2, XCircle } from 'lucide-react';
 import { hindiLessons, hindiVocabulary, type Lesson, type VocabEntry } from '@/data/languageLearning/hindiCourse';
 import { useAudioPlayer } from '@/hooks/useAudioPlayer';
 import confetti from 'canvas-confetti';
+import { ThemeToggle } from '@/components/ThemeToggle';
 
 export default function HindiLessonView() {
     const navigate = useNavigate();
@@ -254,7 +255,7 @@ export default function HindiLessonView() {
     };
 
     return (
-        <div className="min-h-screen bg-gradient-to-b from-orange-50 to-white pb-12">
+        <div className="min-h-screen bg-gradient-to-b from-orange-50 to-white dark:from-black dark:to-black pb-12">
             {/* Header */}
             <div className="px-4 pt-4 flex items-center justify-between mb-6">
                 <Button
@@ -266,6 +267,7 @@ export default function HindiLessonView() {
                     <ArrowLeft className="w-4 h-4 mr-2" />
                     Back
                 </Button>
+                <ThemeToggle />
                 <span className="text-sm font-semibold text-muted-foreground">
                     {currentExerciseIndex + 1} / {lesson.exercises.length}
                 </span>
