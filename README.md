@@ -3,7 +3,7 @@ AI Sathi is a learning platform designed and built for rural India to be able to
 
 ## Features
 - 🌐 Trilingual support (Hindi, Kannada, English)
-- 📚 NCERT-aligned curriculum (Grade 5 Maths & Science)
+- 📚 NCERT-aligned curriculum 
 - 🎮 Duolingo-style card-based learning
 - 🤖 AI-powered question answering
 - 📱 Works offline (PWA support)
