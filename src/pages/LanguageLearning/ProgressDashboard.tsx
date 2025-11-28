@@ -9,6 +9,7 @@ import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Progress } from '@/components/ui/progress';
 import { ArrowLeft, Download, TrendingUp, BookOpen, Award, Target } from 'lucide-react';
+import { ThemeToggle } from '@/components/ThemeToggle';
 
 interface ProgressData {
     hindiLessonsCompleted: number;
@@ -130,7 +131,7 @@ Generated on: ${new Date().toLocaleString()}
     ];
 
     return (
-        <div className="min-h-screen bg-gradient-to-b from-pink-50 to-white pb-12">
+        <div className="min-h-screen bg-gradient-to-b from-pink-50 to-white dark:from-black dark:to-black pb-12">
             {/* Header */}
             <div className="px-4 pt-4 flex items-center justify-between">
                 <Button
@@ -142,6 +143,7 @@ Generated on: ${new Date().toLocaleString()}
                     <ArrowLeft className="w-4 h-4 mr-2" />
                     Back
                 </Button>
+                <ThemeToggle />
                 <Button
                     size="sm"
                     variant="outline"

@@ -9,6 +9,7 @@ import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Progress } from '@/components/ui/progress';
 import { ArrowLeft, Volume2, CheckCircle2, XCircle, Trophy } from 'lucide-react';
+import { ThemeToggle } from '@/components/ThemeToggle';
 import {
     getLessonById,
     getLetterById,
@@ -154,7 +155,7 @@ export default function HindiAlphabetLessonView() {
     };
 
     return (
-        <div className="min-h-screen bg-gradient-to-b from-purple-50 to-white pb-12">
+        <div className="min-h-screen bg-gradient-to-b from-purple-50 to-white dark:from-black dark:to-black pb-12">
             {/* Header */}
             <div className="px-4 pt-4 flex items-center justify-between">
                 <Button
@@ -166,6 +167,7 @@ export default function HindiAlphabetLessonView() {
                     <ArrowLeft className="w-4 h-4 mr-2" />
                     Back
                 </Button>
+                <ThemeToggle />
             </div>
 
             {/* Progress Bar */}
@@ -184,7 +186,7 @@ export default function HindiAlphabetLessonView() {
             {/* Lesson Title */}
             <div className="px-6 pt-6 pb-4 text-center">
                 <h1 className="text-2xl font-bold text-foreground mb-1">{lesson.title}</h1>
-                <p className="text-lg text-purple-600">{lesson.titleHindi}</p>
+                <p className="text-lg text-purple-600 dark:text-purple-400">{lesson.titleHindi}</p>
             </div>
 
             {/* Exercise Content */}
@@ -212,10 +214,10 @@ function IntroductionExercise({
 
     return (
         <div className="space-y-6">
-            <Card className="p-6 bg-blue-50 border-blue-200">
+            <Card className="p-6 bg-blue-50 dark:bg-gray-800 border-blue-200 dark:border-gray-700">
                 <h2 className="text-xl font-bold text-foreground mb-2">{exercise.title}</h2>
                 <p className="text-sm text-muted-foreground mb-1">{exercise.instructions}</p>
-                <p className="text-sm text-purple-600">{exercise.instructionsHindi}</p>
+                <p className="text-sm text-purple-600 dark:text-purple-400">{exercise.instructionsHindi}</p>
             </Card>
 
             <div className="grid gap-4">
@@ -227,7 +229,7 @@ function IntroductionExercise({
                             </div>
                             <div className="flex-1">
                                 <h3 className="text-3xl font-bold text-foreground mb-1">{letter.letter}</h3>
-                                <p className="text-lg text-purple-600 mb-1">{letter.romanization}</p>
+                                <p className="text-lg text-purple-600 dark:text-purple-400 mb-1">{letter.romanization}</p>
                                 <p className="text-sm text-muted-foreground">{letter.sound}</p>
                             </div>
                             <Button
@@ -244,7 +246,7 @@ function IntroductionExercise({
                         <div className="space-y-2">
                             <p className="text-sm font-semibold text-foreground">Examples:</p>
                             {letter.examples.map((example, idx) => (
-                                <div key={idx} className="flex items-center gap-3 p-3 bg-purple-50 rounded-lg justify-between">
+                                <div key={idx} className="flex items-center gap-3 p-3 bg-purple-50 dark:bg-gray-800 rounded-lg justify-between">
                                     <div className="flex items-center gap-3">
                                         <span className="text-2xl">{example.picture}</span>
                                         <div>
@@ -310,35 +312,42 @@ function ListenRepeatExercise({
     const letters = exercise.data.letters.map((id: string) => getLetterById(id)).filter(Boolean) as HindiLetter[];
 
     return (
-        <div className="space-y-6">
-            <Card className="p-6 bg-green-50 border-green-200">
-                <h2 className="text-xl font-bold text-foreground mb-2">{exercise.title}</h2>
-                <p className="text-sm text-muted-foreground mb-1">{exercise.instructions}</p>
-                <p className="text-sm text-purple-600">{exercise.instructionsHindi}</p>
+        <div className="space-y-6 px-4 pb-6">
+            {/* Improved Instructional Box */}
+            <Card className="p-6 bg-gradient-to-br from-purple-50 to-pink-50 border-purple-100 rounded-2xl shadow-sm">
+                <h2 className="text-2xl font-bold text-foreground mb-4">{exercise.title}</h2>
+                <p className="text-base text-muted-foreground mb-3 leading-relaxed">{exercise.instructions}</p>
+                <p className="text-base text-purple-700 dark:text-purple-400 font-medium">{exercise.instructionsHindi}</p>
             </Card>
 
-            <div className="grid grid-cols-2 gap-4">
+            {/* Improved Letter Cards Grid */}
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-5">
                 {letters.map((letter) => (
                     <Card
                         key={letter.id}
-                        className="p-6 cursor-pointer hover:shadow-lg transition-all"
+                        className="relative cursor-pointer transition-all duration-300 hover:scale-105 active:scale-95 rounded-2xl shadow-md hover:shadow-xl border border-purple-100 bg-white overflow-hidden group"
                         onClick={() => playSound(letter.id)}
                     >
-                        <div className="text-center space-y-3">
-                            <div className="w-full aspect-square rounded-2xl bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center">
-                                <span className="text-5xl text-white font-bold">{letter.letter}</span>
+                        {/* Audio Icon - Top Right */}
+                        <div className="absolute top-2 right-2 z-10 bg-white/90 rounded-full p-1.5 shadow-sm group-hover:bg-purple-100 transition-colors">
+                            <Volume2 className="w-4 h-4 text-purple-600 dark:text-purple-400" />
+                        </div>
+
+                        {/* Letter Card Content */}
+                        <div className="w-full h-[140px] md:h-[160px] flex flex-col items-center justify-center p-4">
+                            {/* Letter Display with Soft Pastel Background */}
+                            <div className="w-full h-full max-w-[140px] max-h-[140px] rounded-xl bg-gradient-to-br from-purple-100 to-pink-100 flex items-center justify-center shadow-inner mb-2">
+                                <span className="text-6xl md:text-7xl text-purple-800 dark:text-purple-300 font-black leading-none">{letter.letter}</span>
                             </div>
-                            <p className="text-lg font-bold text-purple-600">{letter.romanization}</p>
-                            <Button size="sm" variant="outline" className="w-full rounded-full">
-                                <Volume2 className="w-4 h-4 mr-2" />
-                                Listen
-                            </Button>
+                            
+                            {/* Romanization */}
+                            <p className="text-sm md:text-base font-semibold text-purple-700 dark:text-purple-400 mt-2">{letter.romanization}</p>
                         </div>
                     </Card>
                 ))}
             </div>
 
-            <Button onClick={onNext} size="lg" className="w-full rounded-2xl h-14 bg-gradient-to-r from-purple-500 to-pink-500">
+            <Button onClick={onNext} size="lg" className="w-full rounded-2xl h-14 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 shadow-lg">
                 I've Practiced! →
             </Button>
         </div>
@@ -394,10 +403,10 @@ function MatchExercise({
 
     return (
         <div className="space-y-6">
-            <Card className="p-6 bg-yellow-50 border-yellow-200">
+            <Card className="p-6 bg-yellow-50 dark:bg-gray-800 border-yellow-200 dark:border-gray-700">
                 <h2 className="text-xl font-bold text-foreground mb-2">{exercise.title}</h2>
                 <p className="text-sm text-muted-foreground mb-1">{exercise.instructions}</p>
-                <p className="text-sm text-purple-600">{exercise.instructionsHindi}</p>
+                <p className="text-sm text-purple-600 dark:text-purple-400">{exercise.instructionsHindi}</p>
             </Card>
 
             {/* Letter to match */}
@@ -407,7 +416,7 @@ function MatchExercise({
                     <div className="w-32 h-32 mx-auto rounded-3xl bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center">
                         <span className="text-6xl text-white font-bold">{letter.letter}</span>
                     </div>
-                    <p className="text-2xl font-bold text-purple-600">{letter.romanization}</p>
+                    <p className="text-2xl font-bold text-purple-600 dark:text-purple-400">{letter.romanization}</p>
                 </div>
             </Card>
 
@@ -500,7 +509,7 @@ function IdentifyExercise({
             <Card className="p-6 bg-orange-50 border-orange-200">
                 <h2 className="text-xl font-bold text-foreground mb-2">{exercise.title}</h2>
                 <p className="text-sm text-muted-foreground mb-1">{exercise.instructions}</p>
-                <p className="text-sm text-purple-600">{exercise.instructionsHindi}</p>
+                <p className="text-sm text-purple-600 dark:text-purple-400">{exercise.instructionsHindi}</p>
             </Card>
 
             {/* Play sound */}
@@ -538,7 +547,7 @@ function IdentifyExercise({
                         >
                             <div className="text-center">
                                 <div className="text-5xl font-bold mb-2">{letter.letter}</div>
-                                <p className="text-sm text-purple-600">{letter.romanization}</p>
+                                <p className="text-sm text-purple-600 dark:text-purple-400">{letter.romanization}</p>
                                 {selectedAnswer === letterId && showFeedback && (
                                     <div className="mt-2">
                                         {isCorrect ? (
@@ -574,10 +583,10 @@ function WordBuildingExercise({
 
     return (
         <div className="space-y-6">
-            <Card className="p-6 bg-pink-50 border-pink-200">
+            <Card className="p-6 bg-pink-50 dark:bg-gray-800 border-pink-200 dark:border-gray-700">
                 <h2 className="text-xl font-bold text-foreground mb-2">{exercise.title}</h2>
                 <p className="text-sm text-muted-foreground mb-1">{exercise.instructions}</p>
-                <p className="text-sm text-purple-600">{exercise.instructionsHindi}</p>
+                <p className="text-sm text-purple-600 dark:text-purple-400">{exercise.instructionsHindi}</p>
             </Card>
 
             <div className="space-y-4">
@@ -647,7 +656,7 @@ function ReadingExercise({
             <Card className="p-6 bg-cyan-50 border-cyan-200">
                 <h2 className="text-xl font-bold text-foreground mb-2">{exercise.title}</h2>
                 <p className="text-sm text-muted-foreground mb-1">{exercise.instructions}</p>
-                <p className="text-sm text-purple-600">{exercise.instructionsHindi}</p>
+                <p className="text-sm text-purple-600 dark:text-purple-400">{exercise.instructionsHindi}</p>
             </Card>
 
             {/* Words */}
@@ -658,7 +667,7 @@ function ReadingExercise({
                             <div className="flex items-center justify-between">
                                 <div>
                                     <h3 className="text-3xl font-bold text-foreground mb-1">{item.word}</h3>
-                                    <p className="text-sm text-purple-600 mb-1">{item.roman}</p>
+                                    <p className="text-sm text-purple-600 dark:text-purple-400 mb-1">{item.roman}</p>
                                     <p className="text-sm text-muted-foreground">{item.meaning}</p>
                                 </div>
                                 <div className="flex flex-col gap-2">
@@ -696,7 +705,7 @@ function ReadingExercise({
                                 <div className="flex items-start justify-between gap-4">
                                     <div className="flex-1">
                                         <h3 className="text-2xl font-bold text-foreground mb-2">{item.sentence}</h3>
-                                        <p className="text-sm text-purple-600 mb-1">{item.roman}</p>
+                                        <p className="text-sm text-purple-600 dark:text-purple-400 mb-1">{item.roman}</p>
                                         <p className="text-sm text-muted-foreground">{item.meaning}</p>
                                     </div>
                                     <div className="flex flex-col gap-2 flex-shrink-0">
@@ -731,13 +740,13 @@ function ReadingExercise({
                     <div className="space-y-4">
                         <div className="text-center">
                             <h3 className="text-2xl font-bold text-foreground mb-1">{data.story.title}</h3>
-                            <p className="text-lg text-purple-600 mb-1">{data.story.titleRoman}</p>
+                            <p className="text-lg text-purple-600 dark:text-purple-400 mb-1">{data.story.titleRoman}</p>
                             <p className="text-sm text-muted-foreground">{data.story.titleEnglish}</p>
                         </div>
 
                         <div className="p-6 bg-white rounded-xl">
                             <p className="text-xl leading-relaxed text-foreground mb-4">{data.story.text}</p>
-                            <p className="text-sm text-purple-600 mb-2">{data.story.textRoman}</p>
+                            <p className="text-sm text-purple-600 dark:text-purple-400 mb-2">{data.story.textRoman}</p>
                             <p className="text-sm text-muted-foreground">{data.story.textEnglish}</p>
                         </div>
 

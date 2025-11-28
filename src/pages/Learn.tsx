@@ -22,6 +22,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { ArrowLeft, ArrowRight, Volume2, CheckCircle2, XCircle, Trophy, HelpCircle, Loader2, MessageCircle } from "lucide-react";
 import { useAudioPlayer } from "@/hooks/useAudioPlayer";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { ThemeToggle } from "@/components/ThemeToggle";
 import { getLessonById, getLocalizedText, type Lesson, type LessonCard } from "@/data/lessonContent";
 import { answerQuestionSimple } from "@/services/searchService";
 import { toast } from "sonner";
@@ -249,7 +250,12 @@ export default function Learn() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white dark:from-black dark:to-black">
+      {/* Theme Toggle */}
+      <div className="absolute top-4 right-4 z-50">
+        <ThemeToggle />
+      </div>
+      
       {/* Header */}
       <div className="bg-white shadow-sm border-b p-4">
         <div className="max-w-2xl mx-auto flex items-center justify-between">

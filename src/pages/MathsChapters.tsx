@@ -4,6 +4,7 @@ import { Card } from "@/components/ui/card";
 import { ArrowLeft, Calculator, PlayCircle, Lock } from "lucide-react";
 import LanguageSelector from "@/components/LanguageSelector";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { ThemeToggle } from "@/components/ThemeToggle";
 import { mathsChapters, getLocalizedText } from "@/data/lessonContent";
 
 const MathsChapters = () => {
@@ -35,7 +36,10 @@ const MathsChapters = () => {
                     <ArrowLeft className="w-4 h-4 mr-2" />
                     {t("Back")}
                 </Button>
-                <LanguageSelector />
+                <div className="flex items-center gap-2">
+                    <ThemeToggle />
+                    <LanguageSelector />
+                </div>
             </div>
 
             {/* Header Section */}

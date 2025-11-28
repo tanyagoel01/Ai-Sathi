@@ -6,6 +6,7 @@ import { ArrowLeft, Send, Mic, Volume2, VolumeX } from "lucide-react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { toast } from "sonner";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { ThemeToggle } from "@/components/ThemeToggle";
 import { getTutoringResponse } from "@/services/geminiService";
 import { useTextToSpeech } from "@/hooks/useTextToSpeech";
 import { useVoiceInput } from "@/hooks/useVoiceInput";
@@ -186,6 +187,7 @@ const Chat = () => {
             🤖 AI Sathi {(sttSupported || ttsSupported) && "• Voice Enabled"}
           </p>
         </div>
+        <ThemeToggle />
       </div>
 
       {/* Messages */}

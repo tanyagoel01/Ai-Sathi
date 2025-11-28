@@ -11,6 +11,7 @@ import { ArrowLeft, Volume2 } from 'lucide-react';
 import { pictureDictionary, type DictionaryCategory, type DictionaryItem } from '@/data/languageLearning/pictureDictionary';
 import { useAudioPlayer } from '@/hooks/useAudioPlayer';
 import { useLanguage } from '@/contexts/LanguageContext';
+import { ThemeToggle } from '@/components/ThemeToggle';
 
 export default function PictureDictionary() {
     const navigate = useNavigate();
@@ -43,9 +44,9 @@ export default function PictureDictionary() {
 
     if (selectedItem) {
         return (
-            <div className="min-h-screen bg-gradient-to-b from-green-50 to-white pb-12">
+            <div className="min-h-screen bg-gradient-to-b from-green-50 to-white dark:from-black dark:to-black pb-12">
                 {/* Header */}
-                <div className="px-4 pt-4">
+                <div className="px-4 pt-4 flex items-center justify-between">
                     <Button
                         variant="ghost"
                         size="sm"
@@ -55,6 +56,7 @@ export default function PictureDictionary() {
                         <ArrowLeft className="w-4 h-4 mr-2" />
                         Back
                     </Button>
+                    <ThemeToggle />
                 </div>
 
                 {/* Word Detail */}
@@ -165,9 +167,9 @@ export default function PictureDictionary() {
 
     if (selectedCategory) {
         return (
-            <div className="min-h-screen bg-gradient-to-b from-green-50 to-white pb-12">
+            <div className="min-h-screen bg-gradient-to-b from-green-50 to-white dark:from-black dark:to-black pb-12">
                 {/* Header */}
-                <div className="px-4 pt-4">
+                <div className="px-4 pt-4 flex items-center justify-between">
                     <Button
                         variant="ghost"
                         size="sm"
@@ -177,6 +179,7 @@ export default function PictureDictionary() {
                         <ArrowLeft className="w-4 h-4 mr-2" />
                         Back
                     </Button>
+                    <ThemeToggle />
                 </div>
 
                 {/* Category Header */}
@@ -225,9 +228,9 @@ export default function PictureDictionary() {
     }
 
     return (
-        <div className="min-h-screen bg-gradient-to-b from-green-50 to-white pb-12">
+        <div className="min-h-screen bg-gradient-to-b from-green-50 to-white dark:from-black dark:to-black pb-12">
             {/* Header */}
-            <div className="px-4 pt-4">
+            <div className="px-4 pt-4 flex items-center justify-between">
                 <Button
                     variant="ghost"
                     size="sm"
@@ -237,6 +240,7 @@ export default function PictureDictionary() {
                     <ArrowLeft className="w-4 h-4 mr-2" />
                     Back
                 </Button>
+                <ThemeToggle />
             </div>
 
             {/* Hero */}

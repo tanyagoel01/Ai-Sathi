@@ -18,6 +18,7 @@ import { Volume2, Heart, Trophy, CheckCircle2, XCircle, Sparkles } from "lucide-
 import { useAudioPlayer } from "@/hooks/useAudioPlayer";
 import { generateQuizQuestions, checkQuizAnswer, type QuizQuestion } from "@/services/geminiService";
 import { toast } from "sonner";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 export default function Quiz() {
   const navigate = useNavigate();
@@ -218,7 +219,7 @@ export default function Quiz() {
 
   if (!currentQuestion) {
     return (
-      <div className="min-h-screen bg-gradient-to-b from-red-50 to-white flex items-center justify-center p-4">
+      <div className="min-h-screen bg-gradient-to-b from-red-50 to-white dark:from-black dark:to-black flex items-center justify-center p-4">
         <Card className="p-8 text-center">
           <p className="text-lg text-red-600">No questions available</p>
           <Button onClick={handleExit} className="mt-4">Exit</Button>
@@ -230,8 +231,13 @@ export default function Quiz() {
   const progress = ((currentQuestionIndex + 1) / questions.length) * 100;
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white p-4">
+    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white dark:from-black dark:to-black p-4">
       <div className="max-w-2xl mx-auto py-4">
+        {/* Theme Toggle */}
+        <div className="absolute top-4 right-4 z-50">
+          <ThemeToggle />
+        </div>
+        
         {/* Header with Lives and Score */}
         <div className="flex justify-between items-center mb-4">
           <div className="flex items-center gap-2">

@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { ArrowLeft, FlaskConical, Play, Clock, BookOpen } from "lucide-react";
 import LanguageSelector from "@/components/LanguageSelector";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { ThemeToggle } from "@/components/ThemeToggle";
 import { scienceChapters, getLocalizedText } from "@/data/lessonContent";
 
 const ScienceChapters = () => {
@@ -45,7 +46,10 @@ const ScienceChapters = () => {
                     <ArrowLeft className="w-4 h-4 mr-2" />
                     {t("Back")}
                 </Button>
-                <LanguageSelector />
+                <div className="flex items-center gap-2">
+                    <ThemeToggle />
+                    <LanguageSelector />
+                </div>
             </div>
 
             {/* Header Section */}
