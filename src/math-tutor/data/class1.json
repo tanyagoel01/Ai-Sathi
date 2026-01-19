@@ -1,0 +1,958 @@
+[
+  {
+    "chapter": "Finding the Furry Cat! (Pre-number Concepts)",
+    "summary": "This chapter focuses on developing spatial understanding and pre-number concepts by introducing and practicing positional words (like on, under, above, below, inside, outside, far, near, top, bottom, before, and after) and teaching children how to sort objects into groups based on their characteristics.",
+    "examples": [
+      "Look for a white thing which is hidden near the board and under the table.",
+      "Identifying if a cat is inside the backpack or outside the red rack.",
+      "Using the words IN and OUT when throwing a ball inside or outside a basket.",
+      "Forming groups of objects, such as putting all the leaves in one group and all the chalk pieces in another group.",
+      "Identifying the colour at the top and below the white colour on the *tiranga* (National Flag)."
+    ],
+    "misconceptions": "The sources do not explicitly list common misconceptions regarding pre-number concepts.",
+    "englishExpl": "This chapter helps you learn **where things are**. We use words like **on** (sitting directly on something), **under** (right below it), **inside** (contained within), and **outside** (not contained). We also learn about **order**, like who comes **before** or **after** you in a line (as in a human train). Another activity is **sorting**, which means putting similar things together, like putting all the buttons or all the pebbles in their own separate groups.",
+    "hindiExpl": "यह अध्याय आपको सिखाता है कि **चीजें कहाँ हैं**. हम \"स्थान\" (position) बताने वाले शब्दों का उपयोग करते हैं, जैसे: **ऊपर** (above), **नीचे** (below), **अंदर** (inside), **बाहर** (outside), **पास** (near), और **दूर** (far). हम **क्रम** भी सीखते हैं, जैसे ट्रेन में कौन **पहले** है और कौन **बाद में** है. इसके अलावा, हम **छँटाई (sorting)** करते हैं, यानी एक जैसी चीज़ों को एक समूह (group) में रखते हैं.",
+    "questions": [
+      {
+        "q": "Where do you throw the garbage? Inside/Outside the dustbin (Encircle the correct word).",
+        "a": "Inside"
+      },
+      {
+        "q": "A boy is sitting on/under the tree (Encircle the correct word based on a picture).",
+        "a": "On/Under (Requires visual context)"
+      },
+      {
+        "q": "Which colour is at the top of the *tiranga*? (white/saffron/green).",
+        "a": "Saffron"
+      },
+      {
+        "q": "How many bogies are there after the engine? (Based on the picture provided).",
+        "a": "Varies based on image, typically more than one"
+      },
+      {
+        "q": "If Meera is after a child in the human train chain, who is before Meera?.",
+        "a": "The child who is holding Meera's shoulders."
+      },
+      {
+        "q": "What two positional words were used to describe the cat hiding 'below the mat' and 'above the hat'?.",
+        "a": "Below and Above"
+      },
+      {
+        "q": "Draw a smile below the nose.",
+        "a": "Drawing activity"
+      },
+      {
+        "q": "Ask children to put two objects in the bottom rack and one object in the top rack of a cupboard. What positional words were used?.",
+        "a": "Bottom and Top"
+      },
+      {
+        "q": "When playing 'Throw the Ball!', what do children say when the ball goes outside the basket?.",
+        "a": "OUT"
+      },
+      {
+        "q": "The cow is inside/top of/outside the house (Encircle the correct word).",
+        "a": "Inside/Outside (Requires visual context)"
+      },
+      {
+        "q": "Look for a red thing which is outside the classroom and under the tree. What positional words were used in the instruction?.",
+        "a": "Outside and Under"
+      },
+      {
+        "q": "Draw a train and mark the bogies before the red bogie with blue colour.",
+        "a": "Drawing activity"
+      },
+      {
+        "q": "What is the name of the seven stars that can be seen in the sky every night?",
+        "a": "Saptarshi or Big Dipper"
+      }
+    ]
+  },
+  {
+    "chapter": "What is Long? What is Round? (Shapes)",
+    "summary": "This chapter introduces basic geometric understanding by teaching children to identify objects as long (extended) or round (circular/spherical). It explores how the shape influences movement, differentiating between objects that roll and those that slide, and identifying objects that can do both.",
+    "examples": [
+      "A pencil box is long and a ball is round.",
+      "Matching objects which are similar in shape, like a shape similar to a matchbox or a cap.",
+      "The *dholak* in the Wise Grandmother story rolled very fast down a sloppy/inclined surface.",
+      "Playing carrom and observing how a striker slides to reach the corner.",
+      "Creating a house, toy, or tower using objects like notebooks, books, and boxes."
+    ],
+    "misconceptions": "Views on whether an object, like a tumbler, is 'long' or 'round' should both be considered, encouraging children to explain their logic.",
+    "englishExpl": "We learn to look at objects and decide if they are **long** (like a pencil or pencil box) or **round** (like a ball). We also see how things move. Objects with flat surfaces, like a shoe box, **slide**. Objects with curves, like balls, **roll**. Some objects (like a can or tumbler) can **roll as well as slide**.",
+    "hindiExpl": "हम चीज़ों को देखकर यह तय करना सीखते हैं कि वे **लम्बी** हैं या **गोल** हैं. हम यह भी देखते हैं कि चीज़ें कैसे चलती हैं. सपाट सतह वाली चीज़ें **फिसलती** (slide) हैं. गोल सतह वाली चीज़ें **लुढ़कती** (roll) हैं. कुछ चीज़ें **लुढ़कना और फिसलना दोनों** काम कर सकती हैं.",
+    "questions": [
+      {
+        "q": "My pencil box is ____ and my ball is ____. (Fill in the blanks with long or round).",
+        "a": "Long; Round"
+      },
+      {
+        "q": "Why did the *dholak* roll in the story of the Wise Grandmother?.",
+        "a": "Because of its shape and the sloppy/inclined surface."
+      },
+      {
+        "q": "Tick the shape which is similar to a cap.",
+        "a": "(Ticking activity)"
+      },
+      {
+        "q": "Write 'R' for rolling objects and 'S' for sliding objects: A ball (A) and a shoe box (B).",
+        "a": "(A) R, (B) S"
+      },
+      {
+        "q": "Name an object that can do both, roll and slide.",
+        "a": "(Discussion based on context, possibly a cylindrical object)"
+      },
+      {
+        "q": "Which feature of an object helps it to roll or slide on a plain surface?.",
+        "a": "Its shape (flat features help sliding, round features help rolling)."
+      },
+      {
+        "q": "What object did the grandmother put the lamb into?.",
+        "a": "A *dholak*"
+      },
+      {
+        "q": "Draw a round object in the given space.",
+        "a": "Drawing activity"
+      },
+      {
+        "q": "Which shape of objects make taller and more stable towers: flat boxes or round balls?.",
+        "a": "Flat boxes (implied by stability)"
+      },
+      {
+        "q": "If you look at the carrom board, how does the striker typically move to reach the corner?.",
+        "a": "Slides"
+      },
+      {
+        "q": "What are the shapes needed to make a puppet from a cardboard box?.",
+        "a": "Box shape (for the body) and drawn eyes/mouth/nose"
+      },
+      {
+        "q": "Draw a pencil box.",
+        "a": "Drawing activity"
+      },
+      {
+        "q": "If your legs are long, how would you describe your face based on the rhyme?.",
+        "a": "Round"
+      }
+    ]
+  },
+  {
+    "chapter": "Mango Treat (Numbers 1 to 9)",
+    "summary": "This chapter introduces counting and numerical recognition for Numbers 1 to 9. It develops skills in counting objects, matching the count to the corresponding numeral, understanding the concept of one more (up to 9), comparing quantities (more, less, equal), and ordering numerals from smallest to largest.",
+    "examples": [
+      "Counting birds joining a mango feast, showing that 4 eating + 1 more = 5 eating (1 more than 4 is 5).",
+      "Matching the number of birds with the number of fingers.",
+      "Playing a game where one child shows four fingers, and the friend shows less than four fingers.",
+      "Colouring 8 stars or 5 flowers.",
+      "Joining the numbers 1 to 9 in the correct order to draw a path.",
+      "Identifying the group of seven stars seen in the sky every night (Saptarshi/Big Dipper)."
+    ],
+    "misconceptions": "The sources do not explicitly list common misconceptions regarding numbers 1 to 9.",
+    "englishExpl": "This chapter teaches you to **count things** from 1 up to 9. We learn that counting is like adding **one more** each time. We practice writing the numbers and matching them to groups of objects (numerals and counts). We also learn to **compare** how many things are in different groups to see if one group has **more, less, or an equal** amount compared to another group.",
+    "hindiExpl": "यह अध्याय आपको **1 से 9 तक चीजें गिनना** सिखाता है. हम सीखते हैं कि हर बार एक संख्या में **एक और** जोड़ने पर अगली संख्या बनती है. हम संख्याओं को लिखना और वस्तुओं के समूह से मिलाना सीखते हैं. हम समूहों की **तुलना** करना भी सीखते हैं यह देखने के लिए कि किस समूह में **अधिक** (more), **कम** (less), या **बराबर** (equal) चीज़ें हैं.",
+    "questions": [
+      {
+        "q": "If 8 animals are eating a mango, and 1 more joins, how many are eating now?.",
+        "a": "9"
+      },
+      {
+        "q": "What is 1 more than 2?.",
+        "a": "3"
+      },
+      {
+        "q": "Show 3 fingers to your friend, and ask them to show 3 fingers but in a different way (Mime with Fingers).",
+        "a": "Activity instruction"
+      },
+      {
+        "q": "Tick the objects which are **more** in number (Activity instruction based on picture comparison).",
+        "a": "(Ticking activity)"
+      },
+      {
+        "q": "Draw a circle around the objects which are **one** in number and write down the numeral 1 below.",
+        "a": "Drawing/Writing activity"
+      },
+      {
+        "q": "Colour 8 stars.",
+        "a": "Colouring activity"
+      },
+      {
+        "q": "Write the missing numbers in the sequence: __, 5, 6, __, 8.",
+        "a": "4, 7"
+      },
+      {
+        "q": "Write the number of sheep seen in the picture.",
+        "a": "(Count and write activity)"
+      },
+      {
+        "q": "Which two groups of fruits together have 8 fruits? (Encircle them).",
+        "a": "(Encircle activity)"
+      },
+      {
+        "q": "Which are less in number: Cups or Spoons? (Encircle them).",
+        "a": "(Encircle activity based on comparison)"
+      },
+      {
+        "q": "Write down the numbers in a correct order from the smallest to the largest: 5, 3, 7, 1, 9.",
+        "a": "1, 3, 5, 7, 9"
+      },
+      {
+        "q": "If a child claps and says 'four', what should the children do in the 'Let us Play Outside' game?.",
+        "a": "Make groups of four by holding hands."
+      },
+      {
+        "q": "What is the group of seven stars seen in the sky every night known as?.",
+        "a": "Saptarshi or Big Dipper"
+      }
+    ]
+  },
+  {
+    "chapter": "Making 10 (Numbers 10 to 20)",
+    "summary": "This chapter introduces the concept of Zero (0) and the number 10. It focuses on mastering number pairs/partitions of 5 and 10. It then extends counting, recognition, and writing skills for numbers 11 to 20, emphasizing the base-ten system (grouping of 10 and units). Skills also include subitization (instant recognition of quantities) and comparing the smallest/biggest numbers up to 20.",
+    "examples": [
+      "The concept of zero is shown when Gola monkey loses all four buttons on his shirt.",
+      "Recognizing that 9 and 1 more makes 10.",
+      "Finding number pairs of 10, such as 1 and 9.",
+      "Counting 14 as one group of 10 and 4 units.",
+      "Filling the tens frames to show a number like 16 or 19.",
+      "Circling the biggest number among 16, 19, and 11."
+    ],
+    "misconceptions": "The sources do not explicitly list common misconceptions regarding numbers 10 to 20.",
+    "englishExpl": "We first learn about **zero (0)**, which means nothing is there or the absence of something. Then we focus on **making 10** by finding which two numbers add up to 10 (like 4 and 6). Once we know 10, we count higher, up to **20**. Numbers like 13 are understood as **10 and 3 more**. We also practice quickly recognizing groups of dots without having to count them one by one (subitization).",
+    "hindiExpl": "सबसे पहले, हम **शून्य (0)** के बारे में सीखते हैं, जिसका अर्थ है कुछ भी नहीं. फिर हम **10 बनाना** सीखते हैं, यानी 10 बनाने के लिए कौन सी दो संख्याएं एक साथ आती हैं (जैसे 1 और 9). 10 के बाद, हम **20 तक** गिनती करते हैं, और हम समझते हैं कि 13 जैसी संख्याएं **10 और 3 इकाइयों** से मिलकर बनी हैं. हम छोटी संख्या में डॉट्स को जल्दी से पहचानना भी सीखते हैं.",
+    "questions": [
+      {
+        "q": "How many suns do you see in the night?.",
+        "a": "0"
+      },
+      {
+        "q": "What two numbers separated by a stick (number pairs) make 5? (List one example).",
+        "a": "1 and 4 or 2 and 3"
+      },
+      {
+        "q": "Complete the number pair for 10: 4 and __ = 10.",
+        "a": "6"
+      },
+      {
+        "q": "Count and write the answer for 10 and 7 more.",
+        "a": "17"
+      },
+      {
+        "q": "Fill the tens frames to show the number 16.",
+        "a": "Colouring activity (1 full frame + 6 units)"
+      },
+      {
+        "q": "Circle the smallest number: 14, 11, 19.",
+        "a": "11"
+      },
+      {
+        "q": "Write the missing number in the sequence: __, 15, 16, __, 18.",
+        "a": "14, 17"
+      },
+      {
+        "q": "If Simran is packing oranges and a box holds 10 oranges, how many total oranges are there if she has 1 box and 5 extra oranges?.",
+        "a": "15"
+      },
+      {
+        "q": "Write the number 17 (Seventeen) in digits.",
+        "a": "17"
+      },
+      {
+        "q": "Write the numbers from the biggest to the smallest: 11, 3, 16, 20, 13, 9.",
+        "a": "20, 16, 13, 11, 9, 3"
+      },
+      {
+        "q": "Draw beads to make a string of 10 beads.",
+        "a": "Drawing activity"
+      },
+      {
+        "q": "If the teacher says 4, what should the child respond if they are doing partitions of 10?.",
+        "a": "6"
+      },
+      {
+        "q": "Circle the biggest number: 11, 17, 9.",
+        "a": "17"
+      }
+    ]
+  },
+  {
+    "chapter": "How Many? (Addition and Subtraction of Single Digit Numbers)",
+    "summary": "This chapter introduces Addition (+) and Subtraction (-) using single-digit numbers. Addition is taught through aggregation (combining groups) and augmentation (adding more), using vocabulary like 'total', 'sum', 'altogether'. Subtraction is introduced as taking away ('left'). Strategies include counting on fingers, using dice, and hopping on a number strip.",
+    "examples": [
+      "4 children and 2 children altogether make 6 children (4 + 2 = 6).",
+      "Finding the sum of dots when rolling two dice.",
+      "Subtraction as taking away: 6 frogs minus 2 jumped away equals 4 left (6 − 2 = 4).",
+      "Finding the sum by hopping forward on a number strip: 4 + 2 = 6.",
+      "Performing subtraction by hopping backwards on the number strip: 9 − 3 = 6.",
+      "Raghav has 4 shells and Sarita has 5 shells, finding the total altogether."
+    ],
+    "misconceptions": "The sources do not explicitly list common misconceptions regarding single-digit addition and subtraction.",
+    "englishExpl": "**Addition** is when you join two groups together to find the **total** number. We use the plus sign (+). **Subtraction** is when you take things away from a group to find **how many are left**. You can add or subtract using your fingers, counting beads, or jumping on a number line (hopping forward for addition, backward for subtraction).",
+    "hindiExpl": "**जोड़ (Addition)** वह होता है जब आप दो समूहों को मिलाकर **कुल** संख्या पता करते हैं. हम धन चिह्न (+) का उपयोग करते हैं. **घटाव (Subtraction)** वह होता है जब आप एक समूह से चीज़ें हटाकर देखते हैं कि **कितनी बची** हैं. हम उंगलियों, मोतियों या नंबर स्ट्रिप पर कूदकर जोड़ या घटाव कर सकते हैं.",
+    "questions": [
+      {
+        "q": "3 tops and 1 top altogether make ____ tops. (3 + 1 = ____).",
+        "a": "4"
+      },
+      {
+        "q": "Count and write the total number of fingers: 4 + 3 = ____.",
+        "a": "7"
+      },
+      {
+        "q": "Find the sum: 5 + 3 = ____.",
+        "a": "8"
+      },
+      {
+        "q": "Fill up the number pair for 8: 5 + __.",
+        "a": "3"
+      },
+      {
+        "q": "Hop and colour the strip and write the sum: 6 + 3 = ____.",
+        "a": "9"
+      },
+      {
+        "q": "If there are 7 balloons and 2 flew away, how many are left? (7 − 2 = ____).",
+        "a": "5"
+      },
+      {
+        "q": "Manisha has 9 bananas. She ate 3 bananas. How many bananas are left?.",
+        "a": "6"
+      },
+      {
+        "q": "Jump 4 steps back from 7 on the number strip. What is the answer? (7 − 4 = ____).",
+        "a": "3"
+      },
+      {
+        "q": "If you make a total of 10 dots on a card, and 5 dots are visible, how many dots are hidden?.",
+        "a": "5"
+      },
+      {
+        "q": "Match the sum: 6 + 3 (match to 9) and 5 + 2 (match to 7).",
+        "a": "(Matching activity)"
+      },
+      {
+        "q": "Find the difference: 4 − 2 = ____.",
+        "a": "2"
+      },
+      {
+        "q": "How many fingers do you have in both your hands and feet?.",
+        "a": "20"
+      },
+      {
+        "q": "If Ranjeet has 3 marbles and Meenakshi has 6 marbles, how many marbles do they have in total?.",
+        "a": "9"
+      }
+    ]
+  },
+  {
+    "chapter": "Vegetable Farm (Addition and Subtraction up to 20)",
+    "summary": "This chapter extends Addition and Subtraction to totals and differences up to 20. It introduces strategies for working with two-digit numbers, such as counting on (e.g., 12, 13, 14, 15, 16), using tools like the *ginladi*, and decomposition (breaking numbers down into 10 + units). The chapter also includes solving multi-step problems that require both addition and subtraction.",
+    "examples": [
+      "Adding 7 tomatoes and 5 tomatoes to make 12 (7 + 5 = 12).",
+      "Adding 12 + 4 by counting on: starting at 12 and counting 4 more (13, 14, 15, 16).",
+      "Gauri’s strategy for 12 + 6: breaking it down into 10 + 2 + 6 = 10 + 8 = 18.",
+      "Subtraction examples: 16 − 4 = 12 and 15 − 9 = 6.",
+      "Solving a problem where a potter sold *diyas* (subtraction) and then made more *diyas* (addition)."
+    ],
+    "misconceptions": "The sources do not explicitly list common misconceptions regarding addition and subtraction up to 20.",
+    "englishExpl": "In this chapter, we add and subtract numbers that result in totals up to **20**. To add large numbers like 12 + 6, you can use strategies like **counting on**, or **breaking the number down** using 10. For example, 12 + 6 can be solved as 10 + 8, which is 18. We use these same strategies for subtraction, finding out how many are left after taking away.",
+    "hindiExpl": "इस अध्याय में, हम **20 तक की संख्याओं** का जोड़ और घटाव करते हैं. बड़ी संख्याओं को जोड़ने के लिए हम **आगे गिनना** (counting on) या संख्या को **10 के समूह** में तोड़ना सीखते हैं. उदाहरण के लिए, 12 + 6 को 10 + 8 = 18 के रूप में हल करना. घटाव के लिए भी हम 20 तक अभ्यास करते हैं.",
+    "questions": [
+      {
+        "q": "8 radishes in one basket and 8 radishes in another basket. 8 + 8 = ____.",
+        "a": "16"
+      },
+      {
+        "q": "Show how you can add 13 + 4 on *ginladi*.",
+        "a": "Counting 13 beads first, and then counting 4 more beads."
+      },
+      {
+        "q": "Sapna has 12 coloured pencils and Gauri has 6 coloured pencils. How many pencils do they have in all?.",
+        "a": "18"
+      },
+      {
+        "q": "Subtract: 14 − 7 = ____.",
+        "a": "7"
+      },
+      {
+        "q": "Subtract: 15 − 0 = ____.",
+        "a": "15"
+      },
+      {
+        "q": "A potter had 9 *diyas*. He sold 5 *diyas*. Then he made 7 more *diyas*. How many *diyas* does he have now?.",
+        "a": "11 (9 - 5 = 4; 4 + 7 = 11)"
+      },
+      {
+        "q": "If Renu is jumping 7 steps back from 15, what number has she reached?.",
+        "a": "8 (15 - 7 = 8)"
+      },
+      {
+        "q": "There are 18 seats in a bus. If 9 children are already sitting, how many more children can sit inside the bus?.",
+        "a": "9"
+      },
+      {
+        "q": "Kuljeet was left with 6 toffees after sharing some from her initial 14. How many toffees did she share with her friends?.",
+        "a": "8 (14 - 6 = 8)"
+      },
+      {
+        "q": "What is the result of 17 - 9 = ____.",
+        "a": "8"
+      },
+      {
+        "q": "If Aman has 8 *laddoos* and Charanjeet brought 6 *laddoos*, how many are there in all?.",
+        "a": "14"
+      },
+      {
+        "q": "Add and match: 8 + 7 (match to 15) and 18 - 1 (match to 17).",
+        "a": "(Matching activity)"
+      },
+      {
+        "q": "What two numbers added together make 13?.",
+        "a": "10 + 3 (implied grouping)"
+      }
+    ]
+  },
+  {
+    "chapter": "Lina’s Family (Measurement)",
+    "summary": "This chapter focuses on comparing and measuring physical attributes like height (tallest/shortest), length (longest/shortest, thickest/thinnest), weight (heavier/lighter), and capacity (how much liquid something holds). It emphasizes the use of non-standard units like handspans, fingers, and footspans for measurement.",
+    "examples": [
+      "Identifying the tallest and shortest members of Lina’s family.",
+      "Measuring the length of a table or a sweater using a handspan.",
+      "Deciding whether to use a handspan or fingers to measure the length of small objects like a key or a spoon.",
+      "Ticking the heavier object (e.g., a bag of blocks vs. a feather).",
+      "Finding out how many jugs or glasses of water will fill a bucket (capacity)."
+    ],
+    "misconceptions": "The sources do not explicitly list common misconceptions regarding measurement.",
+    "englishExpl": "Measurement helps us describe objects. We compare how **tall** things are and how **long** things are. We use our hands (handspan) and feet (footspan) to measure length, which are called **non-standard units**. We compare **weight** to see what is **heavier** or **lighter**. We also compare **capacity** to see which container holds **more** water, like a bucket versus a mug.",
+    "hindiExpl": "माप (Measurement) हमें चीज़ों का वर्णन करने में मदद करता है. हम तुलना करते हैं कि चीज़ें कितनी **ऊंची** (tall) और कितनी **लंबी** (long) हैं. हम लंबाई मापने के लिए अपनी **हथेलियों** (handspan) और **पैरों** (footspan) का उपयोग करते हैं—इन्हें **गैर-मानक इकाइयाँ** कहते हैं. हम **वजन** की तुलना करके देखते हैं कि कौन सी चीज़ **भारी** है या **हल्की** है. हम **क्षमता** की तुलना भी करते हैं, यह देखने के लिए कि कौन सा बर्तन अधिक पानी धारण करता है.",
+    "questions": [
+      {
+        "q": "Circle the tallest member in Lina's family.",
+        "a": "(Activity instruction)"
+      },
+      {
+        "q": "Who is taller than Lina’s mother but shorter than Lina’s father?.",
+        "a": "(Answer depends on visual context, likely an uncle or aunt)"
+      },
+      {
+        "q": "Tick the one which is **thickest** (Activity instruction).",
+        "a": "(Ticking activity)"
+      },
+      {
+        "q": "Draw a rope **shorter** than a given reference line.",
+        "a": "Drawing activity"
+      },
+      {
+        "q": "What will you choose to measure the length of a key: handspan or fingers?.",
+        "a": "Fingers (since it is a smaller object)"
+      },
+      {
+        "q": "Tick the **lighter** object (Activity instruction).",
+        "a": "(Ticking activity)"
+      },
+      {
+        "q": "Guess how many glasses of water will fill the bucket.",
+        "a": "(Estimation activity)"
+      },
+      {
+        "q": "If your water bottle requires 6 cups of water and your friend’s requires 7, which bottle holds more water?.",
+        "a": "Your friend's bottle"
+      },
+      {
+        "q": "Which activity needs more water: brushing teeth or bathing in a bucket?.",
+        "a": "Bathing in a bucket"
+      },
+      {
+        "q": "What is the tallest statue in the world, located in Gujarat, India?.",
+        "a": "Statue of Unity (Sardar Vallabhbhai Patel)"
+      },
+      {
+        "q": "Lina's house is nearest to/farthest from the shop (Encircle the correct option).",
+        "a": "Nearest to/farthest from (Requires visual context)"
+      },
+      {
+        "q": "List one thing which is easier to carry.",
+        "a": "(Open answer, e.g., a feather)"
+      },
+      {
+        "q": "Use your footspan to measure the distance between your seat and the classroom door.",
+        "a": "Measurement activity"
+      }
+    ]
+  },
+  {
+    "chapter": "Fun with Numbers (Numbers 21 to 99)",
+    "summary": "This chapter expands number learning to include counting, recognition, and writing numbers from 21 up to 100. The central concept reinforced is place value, understanding numbers as consisting of groups of tens and units. Activities involve counting objects, writing numbers in sequence, using tens frames, and utilizing tools like the *ginladi* for visualization and counting.",
+    "examples": [
+      "Writing numbers in sequence, such as 21, 22, 23, 24, 25.",
+      "Writing the words for the numbers, such as 41 as Forty One.",
+      "Using tens frames to represent numbers, like filling two frames and nine units for 29.",
+      "Writing numbers from 91 (Ninety One) up to 100 (Hundred).",
+      "Using a clip to attach a number card (1 to 50) to the correct place on the *ginladi*."
+    ],
+    "misconceptions": "The sources do not explicitly list common misconceptions regarding numbers 21 to 99.",
+    "englishExpl": "We learn to count and write big numbers from **21 all the way up to 100**. When we look at a number like 45, we understand that it is made up of **four groups of ten** and **five ones** (units). Tools like the bead string (*ginladi*) help us see these groups of tens. We practice recognizing these numbers in order and filling in any missing numbers in a sequence.",
+    "hindiExpl": "हम **21 से 100 तक** बड़ी संख्याएँ गिनना और लिखना सीखते हैं. मुख्य बात यह है कि हम समझते हैं कि 45 जैसी संख्याएँ **चार दस के समूहों** (four tens) और **पाँच इकाइयों** (five ones) से बनी होती हैं. *गिनलादी* (ginladi) जैसे उपकरण हमें दस के इन समूहों को देखने में मदद करते हैं. हम संख्याओं को क्रम में पहचानते हैं और अनुक्रमों में छूटी हुई संख्याओं को भरते हैं.",
+    "questions": [
+      {
+        "q": "Write the number 22 in words.",
+        "a": "Twenty Two"
+      },
+      {
+        "q": "Write the numbers from 31 to 40.",
+        "a": "31, 32, 33, 34, 35, 36, 37, 38, 39, 40"
+      },
+      {
+        "q": "Fill up the missing numbers: 46, __, 48, __.",
+        "a": "47, 49"
+      },
+      {
+        "q": "Write the number that comes just before 40.",
+        "a": "39"
+      },
+      {
+        "q": "Write the number 86 in words.",
+        "a": "Eighty Six"
+      },
+      {
+        "q": "How many tens and how many units are in the number 85?.",
+        "a": "8 tens and 5 units"
+      },
+      {
+        "q": "Fill up the missing numbers in the slide and ladder game chart: 61, __, 63, __.",
+        "a": "62, 64"
+      },
+      {
+        "q": "If Simran has 22 oranges and she packs them in boxes that hold 10, how many full boxes does she have?.",
+        "a": "2 full boxes"
+      },
+      {
+        "q": "Draw and fill the tens frames to show the number 41.",
+        "a": "Drawing/Colouring activity (4 full frames + 1 unit)"
+      },
+      {
+        "q": "Write the numbers from 97 to 100.",
+        "a": "97, 98, 99, 100"
+      },
+      {
+        "q": "Write the number for Sixty Eight.",
+        "a": "68"
+      },
+      {
+        "q": "Count backwards from 50 using a number line or *ginladi* (Activity instruction).",
+        "a": "Activity instruction"
+      },
+      {
+        "q": "What is the special name for the type of painting shown (implied context of the picture, Warli)?.",
+        "a": "Warli painting"
+      }
+    ]
+  },
+  {
+    "chapter": "*Utsav* (Patterns)",
+    "summary": "This chapter focuses on recognizing and creating patterns found in festivals, nature, art (*kolam, rangoli*), and daily objects. Children learn to identify the repeating unit and extend patterns using colors, shapes, vegetable prints, fingerprints, and actions (clapping, stamping). They also study number patterns.",
+    "examples": [
+      "Observing patterns in festival celebrations like Makar Sankranti, Pongal, Bihu, and Lohri.",
+      "Extending visual patterns by drawing further shapes.",
+      "Creating a pattern using the impression of a thumb or fingers.",
+      "Completing number patterns (e.g., 10, 20, __, 40).",
+      "Completing traditional patterns like *kolam* or *rangoli*.",
+      "Creating patterns using different actions like clapping or stamping feet."
+    ],
+    "misconceptions": "The sources do not explicitly list common misconceptions regarding patterns.",
+    "englishExpl": "A **pattern** is when colors, shapes, or numbers repeat in the same way over and over again. We see patterns everywhere: in nature (like animal skins), in art (like *rangoli* designs), and in festivals. The goal is to figure out **what repeats** and then **extend** the pattern by drawing, colouring, or writing what comes next.",
+    "hindiExpl": "एक **पैटर्न** तब बनता है जब रंग, आकार या संख्याएँ बार-बार एक ही तरीके से दोहराई जाती हैं. हम पैटर्न त्योहारों, प्रकृति और कला में देखते हैं. हमें यह पता लगाना होता है कि **क्या दोहराया जा रहा है** और फिर पैटर्न को आगे बढ़ाना होता है.",
+    "questions": [
+      {
+        "q": "Draw the next three elements in the sequence: Square, Circle, Triangle, Square, Circle, __, __, __.",
+        "a": "Triangle, Square, Circle"
+      },
+      {
+        "q": "If the pattern is Red, Blue, Blue, Red, Blue, Blue, what colour comes next?.",
+        "a": "Red"
+      },
+      {
+        "q": "Complete the number pattern: 1, 3, 5, 7, __, __.",
+        "a": "9, 11"
+      },
+      {
+        "q": "Complete the number pattern: 50, 40, 30, __.",
+        "a": "20"
+      },
+      {
+        "q": "Use vegetable slices (with the help of an adult) to create a pattern.",
+        "a": "Activity instruction"
+      },
+      {
+        "q": "What kind of pattern did Munna create by using the impression of his thumb and fingers?.",
+        "a": "Fingerprint/Thumbprint pattern"
+      },
+      {
+        "q": "Name two items found in nature that exhibit patterns.",
+        "a": "Leaves, butterfly, animal skins (cat, tiger, zebra), beehive"
+      },
+      {
+        "q": "Why does the festival of Uttarayan signify the return of sunny days?.",
+        "a": "It marks the transition from winters to summers and the start of the harvest season."
+      },
+      {
+        "q": "If the repeating action pattern is Clap, Snap fingers, what action comes next?.",
+        "a": "Clap"
+      },
+      {
+        "q": "Complete the *kolam* pattern (Activity instruction).",
+        "a": "Drawing/Pattern completion activity"
+      },
+      {
+        "q": "What color should come after pink in a pink-yellow-pink-yellow pattern?.",
+        "a": "Yellow"
+      },
+      {
+        "q": "Where in India can we find beautiful patterns to appreciate its rich heritage?.",
+        "a": "Temples, mosques, churches, gurudwaras, and monuments"
+      },
+      {
+        "q": "Collect three different kinds of leaves and arrange them in a repeating sequence.",
+        "a": "Activity instruction"
+      }
+    ]
+  },
+  {
+    "chapter": "How do I Spend my Day? (Time)",
+    "summary": "This chapter introduces the concept of Time by defining and relating daily activities to the four main parts of the day: Morning, Afternoon, Evening, and Night. It also covers comparing the duration of different activities (longer/shorter time) and recognizing the four major Seasons (Summer, Winter, Spring, Monsoon).",
+    "examples": [
+      "Identifying that the sun is rising in the sky during the morning.",
+      "Pihu eating dinner with her family during the night when the moon and stars are visible.",
+      "Ticking activities done in the morning (e.g., brushing teeth, breakfast).",
+      "Colouring the activity that takes longer time.",
+      "Matching items like woolens or rain boots to the correct season."
+    ],
+    "misconceptions": "The sources do not explicitly list common misconceptions regarding time.",
+    "englishExpl": "Time helps us organize our day. We divide the day into **Morning** (when the sun rises), **Afternoon** (when the sun is high and we usually eat lunch), **Evening** (when the sun sets and we play), and **Night** (when the moon is out and we sleep). We also compare activities to see which one takes a **longer** amount of time and learn about the four **seasons** we experience.",
+    "hindiExpl": "समय हमें अपने दिन को व्यवस्थित करने में मदद करता है. हम दिन को **सुबह, दोपहर, शाम और रात** में बांटते हैं. हम यह भी तुलना करते हैं कि कौन सी गतिविधि में **अधिक समय** लगता है. इसके अलावा, हम चार **मौसमों** (गर्मी, सर्दी, वसंत और मानसून) और उनसे जुड़ी चीज़ों के बारे में सीखते हैं.",
+    "questions": [
+      {
+        "q": "What time of day is it when the moon and stars are visible in the sky?.",
+        "a": "Night time"
+      },
+      {
+        "q": "Name two activities Pihu does in the morning.",
+        "a": "Get up, drink warm water, brush teeth, take a bath, yoga/exercise, eat breakfast, get ready for school."
+      },
+      {
+        "q": "Tick the activities that you do at **night**.",
+        "a": "(Ticking activity)"
+      },
+      {
+        "q": "What indicates that it is afternoon time?.",
+        "a": "The sun is high in the sky."
+      },
+      {
+        "q": "Colour the activity that usually takes **longer time**: Washing hands or taking a nap.",
+        "a": "Taking a nap"
+      },
+      {
+        "q": "Match the object (e.g., raincoat) with the season (Monsoon/Summer).",
+        "a": "Raincoat matches Monsoon"
+      },
+      {
+        "q": "What do you like to wear in the winter season?.",
+        "a": "(Open answer, e.g., woolens)"
+      },
+      {
+        "q": "Put the following activities in the correct order: 1. Brush teeth, 2. Go to sleep, 3. Eat dinner.",
+        "a": "Brush teeth (Morning), Eat dinner (Night), Go to sleep (Night)"
+      },
+      {
+        "q": "Draw one activity you usually do during the evening.",
+        "a": "Drawing activity (e.g., playing, studying)"
+      },
+      {
+        "q": "Pihu reads a story book and goes to sleep during which part of the day?.",
+        "a": "Night time"
+      },
+      {
+        "q": "Which season involves woolens?.",
+        "a": "Winter"
+      },
+      {
+        "q": "Why is it important to take water in a bucket for bathing instead of a shower or running tap water?.",
+        "a": "To save water."
+      },
+      {
+        "q": "What does Pihu do when she comes back home from school?.",
+        "a": "Takes rest for some time."
+      }
+    ]
+  },
+  {
+    "chapter": "How Many Times? (Multiplication)",
+    "summary": "This chapter introduces Multiplication as the concept of repeated addition. It focuses on counting the total number of items when objects are arranged in equal groups, using contexts like amusement park rides or packaged goods. It teaches children to express repeated addition using the phrase 'X times Y'.",
+    "examples": [
+      "Finding the total number of children sitting on 4 horses, with 2 children on each: 2 + 2 + 2 + 2 = 8.",
+      "Finding the total pieces of *jalebi* if 6 plates were ordered, and each plate has 3 pieces (6 times 3).",
+      "Calculating the total number of people in a bus where the repeated addition is 9 times 2.",
+      "Calculating the total number of bottles from 4 crates, each having 5 bottles: 4 times 5 = 20.",
+      "Finding the total number of pencils if there are 5 times 3 pencils."
+    ],
+    "misconceptions": "The sources do not explicitly list common misconceptions regarding multiplication.",
+    "englishExpl": "**Multiplication** is a quick way to **add the same number over and over again**. This works when you have groups that are all the **same size**. Instead of writing a long addition sentence, you can say 'how many times' you are adding that number. For example, if you have 4 groups of 5, that is **4 times 5**.",
+    "hindiExpl": "**गुणा (Multiplication)** एक ही संख्या को **बार-बार जोड़ने** का एक तेज़ तरीका है. यह तब काम करता है जब आपके पास **समान आकार के समूह** होते हैं. लंबी जोड़ की पंक्ति लिखने के बजाय, आप कह सकते हैं कि आप उस संख्या को \"कितनी बार\" जोड़ रहे हैं. उदाहरण के लिए, 4 घोड़े हैं और हर एक पर 2 बच्चे हैं, तो यह **4 बार 2** है.",
+    "questions": [
+      {
+        "q": "Write the repeated addition for 5 times 3.",
+        "a": "3 + 3 + 3 + 3 + 3"
+      },
+      {
+        "q": "Write the 'times' statement for 2 + 2 + 2 + 2.",
+        "a": "4 times 2"
+      },
+      {
+        "q": "If there are 3 bogies in a toy train, and 3 children sit in each, what is the total number of children? (3 times 3 = __).",
+        "a": "9"
+      },
+      {
+        "q": "If there are 9 times 2 people in the bus, what is the total number of people?.",
+        "a": "18"
+      },
+      {
+        "q": "Calculate: 4 times 5 = ____.",
+        "a": "20"
+      },
+      {
+        "q": "Cheenu bought 4 packs of erasers, with 2 erasers in each. Write the addition sentence to find the total erasers.",
+        "a": "2 + 2 + 2 + 2 = 8"
+      },
+      {
+        "q": "How many wheels are there on 3 cycles? (A cycle has 2 wheels).",
+        "a": "6 (2 + 2 + 2)"
+      },
+      {
+        "q": "If 5 compartments of the big wheel hold 4 children each, write the addition sentence for the total capacity.",
+        "a": "4 + 4 + 4 + 4 + 4 = 20"
+      },
+      {
+        "q": "Write the repeated addition for 5 times 3 pencils.",
+        "a": "3 + 3 + 3 + 3 + 3"
+      },
+      {
+        "q": "If you are counting crates of water bottles, and you have 5 + 5 + 5 + 5, how many times are you adding 5?.",
+        "a": "4 times"
+      },
+      {
+        "q": "If there are 3 apples in each group, and you have 3 groups, what is 3 times 3?.",
+        "a": "9"
+      },
+      {
+        "q": "If 4 children are sitting on 4 horses, and there are 2 children on each horse, how many total horses are there?.",
+        "a": "4 horses"
+      },
+      {
+        "q": "If the repeated addition is 9 times 2, what is the number being added repeatedly?.",
+        "a": "2"
+      }
+    ]
+  },
+  {
+    "chapter": "How Much Can We Spend? (Money)",
+    "summary": "This chapter introduces Money by familiarizing children with Indian currency denominations: coins (`1, `2, `5, `10) and notes (`10, `20, `50, `100). The focus is on calculating the total amount of money and understanding how to form different combinations of currency to match a specific value. It also involves solving simple word problems related to buying items.",
+    "examples": [
+      "Recognizing and writing the denominations of `1, `10, `20, `50, `100.",
+      "Buying a ball costing `20 using four `5 coins or two `10 notes.",
+      "Finding the total amount when different notes and coins are combined (e.g., one `5 coin and two `1 coins).",
+      "Drawing or filling in different currency combinations to make amounts like `20 or `13.",
+      "Solving a problem where Riya needs more money to buy a car costing `14 when she has `10."
+    ],
+    "misconceptions": "The sources do not explicitly list common misconceptions regarding money.",
+    "englishExpl": "**Money** is used to buy things. We learn to recognize Indian coins and notes and their different **values**. The main skill is figuring out the **total amount** you have. You also learn that you can make the same amount of money in **different ways** using various coins and notes, like making `20 with two `10 notes or four `5 coins.",
+    "hindiExpl": "पैसा (Money) वस्तुओं को खरीदने के लिए उपयोग किया जाता है. हम भारतीय सिक्कों और नोटों के **मूल्यों** को पहचानना सीखते हैं. मुख्य कौशल यह है कि आपके पास **कुल कितना पैसा** है. आप यह भी सीखते हैं कि आप **अलग-अलग तरीकों** से समान राशि बना सकते हैं.",
+    "questions": [
+      {
+        "q": "What is the cost of the ball (implied by context)?.",
+        "a": "`20"
+      },
+      {
+        "q": "If a ball costs `20, how many `5 coins does Riya need to buy it?.",
+        "a": "4 coins"
+      },
+      {
+        "q": "If the cost of a car is `14, and Riya has `10 with her, how much more money does she need?.",
+        "a": "`4"
+      },
+      {
+        "q": "Find the total amount: one `5 coin and two `1 coins.",
+        "a": "`7"
+      },
+      {
+        "q": "Draw a combination of currency (coins or notes) that totals `10.",
+        "a": "Drawing activity (e.g., one `10 note or two `5 coins)"
+      },
+      {
+        "q": "Match the same amount: one `20 note (match to two `10 notes).",
+        "a": "Matching activity"
+      },
+      {
+        "q": "Riya and Sahil together have `30. Name one toy combination they can buy (Implied activity based on list of toys and prices).",
+        "a": "(Open answer based on toy prices)"
+      },
+      {
+        "q": "If a group of children are playing a shopping game, what might they use as play money?.",
+        "a": "Paper slips of different denominations."
+      },
+      {
+        "q": "Why is saving money a good habit? (Discuss).",
+        "a": "Discussion instruction"
+      },
+      {
+        "q": "What is the minimum number of coins used to spend exactly `49? (Puzzle based on source).",
+        "a": "(Requires calculation/Trial and error)"
+      },
+      {
+        "q": "If you combine a `50 note and a `20 note, what is the total value?.",
+        "a": "`70"
+      },
+      {
+        "q": "Name the four currency notes shown.",
+        "a": "`10, `20, `50, `100"
+      },
+      {
+        "q": "What two combinations of coins or notes can make `13?.",
+        "a": "(Example: one `10 note, one `2 coin, one `1 coin; or two `5 coins and three `1 coins)"
+      }
+    ]
+  },
+  {
+    "chapter": "So Many Toys (Data Handling)",
+    "summary": "This chapter introduces Data Handling by reading and interpreting information presented in a visual format (counting pictures of toys or flowers). Children learn to compare the frequency (number) of different items using terminology like more than, less than, or equal to, and identifying the categories that are most and least in number.",
+    "examples": [
+      "Counting the number of different toys shown, like dolls, cars, elephants, and teddy bears.",
+      "Completing sentences: The number of dolls is ______ the number of cars (more than/less than/equal to).",
+      "Identifying the colour of flowers (Red, Blue, Orange, Purple) which is least in number.",
+      "Determining if the number of orange flowers is less than the purple flowers (True or False).",
+      "Finding out how many children in the class have 3 letters in their names versus 4 letters."
+    ],
+    "misconceptions": "The sources do not explicitly list common misconceptions regarding data handling.",
+    "englishExpl": "**Data Handling** means taking information (like counting how many toys there are) and organizing it to learn things. After counting, we compare the groups. We find out which type of toy is the **most common** (highest count) and which is the **least common** (lowest count). We use words like **more than, less than, or equal to** to compare the counts.",
+    "hindiExpl": "**डेटा हैंडलिंग (Data Handling)** का मतलब है जानकारी को समझने के लिए चीज़ों को गिनना और व्यवस्थित करना. हम गिनती की तुलना करते हैं यह देखने के लिए कि कौन सा समूह **सबसे अधिक** या **सबसे कम** है. तुलना करने के लिए हम **से अधिक**, **से कम**, या **के बराबर** शब्दों का उपयोग करते हैं.",
+    "questions": [
+      {
+        "q": "Count and write the number of elephants in the picture of toys.",
+        "a": "(Count and write activity)"
+      },
+      {
+        "q": "The number of teddy bears is **more than / less than / equal to** the number of elephants (Encircle the correct option based on data).",
+        "a": "(Comparison activity)"
+      },
+      {
+        "q": "Name the colour of the flowers which are **most** in number (based on picture data).",
+        "a": "(Identification based on maximum count)"
+      },
+      {
+        "q": "True or False: Number of red flowers is more than the blue flowers.",
+        "a": "(Based on visual data)"
+      },
+      {
+        "q": "If you count 6 dolls and 5 cars, which item is less in number?.",
+        "a": "Cars"
+      },
+      {
+        "q": "If Kopal arranged number cards and Anaya hid them with bowls, how can you recognize the numbers?.",
+        "a": "By using context/sequence/memory (Activity instruction)"
+      },
+      {
+        "q": "Count the number of logs. Is it 3 logs or 4 logs?.",
+        "a": "(Count and determine)"
+      },
+      {
+        "q": "If the number of cars is 7, and the number of dolls is 5, how many more cars are there than dolls?.",
+        "a": "2 (Implied subtraction)"
+      },
+      {
+        "q": "Find the number name 'five' and 'ten' in the word puzzle.",
+        "a": "(Word search activity)"
+      },
+      {
+        "q": "If there are 4 types of objects (buttons, pebbles, seeds, clay balls) and 4 of each, how can you arrange them in a 4x4 box such that every object occurs only once in a row and a column?.",
+        "a": "Puzzle/Arrangement activity"
+      },
+      {
+        "q": "Name the colour of flowers which are **least** in number.",
+        "a": "(Identification based on minimum count)"
+      },
+      {
+        "q": "If the number of elephants is equal to the number of teddy bears, what word should be used to complete the sentence?.",
+        "a": "Equal to"
+      },
+      {
+        "q": "Draw a card with a border of colourful flowers.",
+        "a": "Drawing activity"
+      }
+    ]
+  },
+  {
+    "chapter": "Puzzles",
+    "summary": "This section contains age-appropriate brain teasers, puzzles, and riddles designed to provide joyful experiences and encourage logical thinking, analytical skills, and mathematical communication. The puzzles cover topics such as number sequencing, comparison, addition, subtraction, and spatial arrangement (Sudoku-style placement).",
+    "examples": [
+      "Hiding numbers on a number card by using hands to play a game.",
+      "A riddle: 'I am 3 more than 8 and 3 less than 14.'.",
+      "Placing shapes in a box such that any shape occurs only once in a row and column.",
+      "Finding the numbers 1 to 10 hidden in a word search.",
+      "Choosing three balls such that their sum will be 15."
+    ],
+    "misconceptions": "The sources note that children should not be assessed on solving these puzzles, and there may be more than one right answer for some of the problems.",
+    "englishExpl": "The Puzzles section is for fun and uses math concepts like numbers, addition, subtraction, and patterns to make you think logically. They are designed to be challenging brain teasers and riddles that help build critical thinking and problem-solving abilities.",
+    "hindiExpl": "पहेलियाँ (Puzzles) मनोरंजन के लिए हैं और संख्या, जोड़, घटाव, और पैटर्न का उपयोग करके आपको तार्किक रूप से सोचने में मदद करती हैं. ये दिमाग को चुनौती देने वाले कार्य हैं जो आलोचनात्मक सोच और समस्या-समाधान क्षमताओं को विकसित करने में मदद करते हैं.",
+    "questions": [
+      {
+        "q": "I am 3 more than 8 and 3 less than 14. Who am I?.",
+        "a": "11 (8 + 3 = 11; 14 - 3 = 11)"
+      },
+      {
+        "q": "Find the numbers from 1 to 10 in the given word puzzle.",
+        "a": "Finding activity"
+      },
+      {
+        "q": "Fill the numbers from 1 to 5 in the given balls so that the sum on both sides is equal (A puzzle activity).",
+        "a": "Puzzle/Calculation activity"
+      },
+      {
+        "q": "Gillu’s favourite number is 8. Ask one addition question to Gillu that has an answer of 8.",
+        "a": "5 + 3 = 8 or 4 + 4 = 8"
+      },
+      {
+        "q": "I am between 5 and 10. I become three more when read upside down. Who am I?.",
+        "a": "6 (Upside down is 9)"
+      },
+      {
+        "q": "Add 5 to me and you will get 24. Who am I?.",
+        "a": "19 (24 - 5 = 19)"
+      },
+      {
+        "q": "What is the result of 7 - 1 or 3 + 3 (as shown in the puzzle)?.",
+        "a": "6"
+      },
+      {
+        "q": "How many times can you subtract 5 from 25?.",
+        "a": "5 times"
+      },
+      {
+        "q": "If three balls chosen have a sum of 15, which numbers were chosen? (Hint: Try rotating the balls to find their value).",
+        "a": "(Puzzle/Calculation activity)"
+      },
+      {
+        "q": "Reduce 8 from me and 14 will be left. Who am I?.",
+        "a": "22 (14 + 8 = 22)"
+      },
+      {
+        "q": "I am just before 40. Who am I?.",
+        "a": "39"
+      },
+      {
+        "q": "Complete the pot by finding the missing identical shadow image.",
+        "a": "(Visual pattern matching activity)"
+      },
+      {
+        "q": "If Ranu wants to place 3 seeds on numbers in a chart to get a total of 17, which numbers could she choose?.",
+        "a": "(Trial and error activity based on the chart, e.g., 9, 7, 1)"
+      }
+    ]
+  }
+]

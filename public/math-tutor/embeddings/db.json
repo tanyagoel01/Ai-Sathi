@@ -1,0 +1,13 @@
+{
+  "metadata": {
+    "generatedAt": "Not generated yet",
+    "model": "Xenova/all-MiniLM-L6-v2",
+    "embeddingDimension": 384,
+    "totalEntries": 0,
+    "chapters": 0,
+    "status": "PLACEHOLDER",
+    "instructions": "Run 'cd src/math-tutor && npm run generate-embeddings' to generate this file"
+  },
+  "chapters": [],
+  "questions": []
+}
